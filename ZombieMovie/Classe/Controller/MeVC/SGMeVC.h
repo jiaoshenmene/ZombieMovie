@@ -1,15 +1,14 @@
 //
-//  ViewController.h
+//  SGMeVC.h
 //  ZombieMovie
 //
-//  Created by apple on 16/6/8.
+//  Created by dujia on 16/6/19.
 //  Copyright © 2016年 sun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+@interface SGMeVC : UIViewController
 
 @end
-

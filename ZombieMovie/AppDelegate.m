@@ -3,10 +3,12 @@
 //  ZombieMovie
 //
 //  Created by apple on 16/6/8.
-//  Copyright © 2016年 sun. All rights reserved.
+//  Copyright © 2016年 一位97年的iOS开发者,喜欢学习新知识(姿势😄),如果你和我有相同爱好就加我🐧:450002197,记得备注iOS开发者. All rights reserved.
 //
 
 #import "AppDelegate.h"
+
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    // 更改状态栏颜色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+//    ViewController *vc = [[ViewController alloc] init];
+//    self.window.rootViewController = vc;
+       return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
