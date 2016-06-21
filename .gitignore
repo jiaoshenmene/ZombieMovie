@@ -4,7 +4,9 @@
 
 ## Build generated
 build/
-DerivedData
+
+DerivedData/
+
 
 ## Various settings
 *.pbxuser
@@ -15,6 +17,7 @@ DerivedData
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+
 xcuserdata
 
 ## Other
@@ -23,9 +26,13 @@ xcuserdata
 *.xcuserstate
 *.xcscmblueprint
 
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
+
+*.dSYM.zip
+*.dSYM
 
 # CocoaPods
 #
@@ -33,6 +40,7 @@ xcuserdata
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
+
 Pods/
 profile
 *.xcworkspace
@@ -40,6 +48,7 @@ profile
 *.lock
 *.unlock
 *.swp
+
 
 # Carthage
 #
@@ -60,3 +69,7 @@ fastlane/screenshots
 podpush
 
 IJKMediaFramework.framework/
+
+
+iOSInjectionProject/
+
