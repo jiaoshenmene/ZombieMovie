@@ -285,7 +285,7 @@
             if(_self.startLiveButton.selected){
                 [_self.startLiveButton setTitle:@"结束直播" forState:UIControlStateNormal];
                 LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
-                stream.url = @"rtmp://10.129.157.86:1935/live1/1234";
+                stream.url = @"rtmp://121.42.201.209/mytv/demo1";
                 //stream.url = @"rtmp://daniulive.com:1935/live/stream2399";
                 [_self.session startLive:stream];
             }else{

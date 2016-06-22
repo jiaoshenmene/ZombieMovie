@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol SGMeMainViewDel  <NSObject>
+
+- (void)iconMethod:(id)sender;
+
+@end
+
 @interface SGMeMainView : UIView
+
+@property (nonatomic , weak) id<SGMeMainViewDel> delegate;
 
 @end

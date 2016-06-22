@@ -80,7 +80,13 @@
 		A1591EE11D16995800A9BB9C /* LMLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE01D16995800A9BB9C /* LMLivePreview.m */; };
 		A1591EE71D16996200A9BB9C /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE41D16996200A9BB9C /* UIControl+YYAdd.m */; };
 		A1591EE81D16996200A9BB9C /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE61D16996200A9BB9C /* UIView+YYAdd.m */; };
+		A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1771D581D195F8D00711B6A /* SGCarameVC.m */; };
 		A1DAA5BC1D18EDAC0091B90E /* SGMeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAA5BB1D18EDAC0091B90E /* SGMeMainView.m */; };
+		A1DAA5C31D18F5B30091B90E /* SGMeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAA5C21D18F5B30091B90E /* SGMeHeadView.m */; };
+		A1DAA5C71D18F8590091B90E /* SGMeData.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAA5C61D18F8590091B90E /* SGMeData.m */; };
+		A1DAA5CA1D1916D50091B90E /* SGMeFunctionData.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAA5C91D1916D50091B90E /* SGMeFunctionData.m */; };
+		A1DAA6021D1932E40091B90E /* SGPickerHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAA6011D1932E40091B90E /* SGPickerHeadView.m */; };
+		A1DAA6051D19331B0091B90E /* SGPickerHeadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAA6041D19331B0091B90E /* SGPickerHeadVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,8 +238,21 @@
 		A1591EE41D16996200A9BB9C /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
 		A1591EE51D16996200A9BB9C /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		A1591EE61D16996200A9BB9C /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		A1771D571D195F8D00711B6A /* SGCarameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCarameVC.h; sourceTree = "<group>"; };
+		A1771D581D195F8D00711B6A /* SGCarameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCarameVC.m; sourceTree = "<group>"; };
 		A1DAA5BA1D18EDAC0091B90E /* SGMeMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMeMainView.h; sourceTree = "<group>"; };
 		A1DAA5BB1D18EDAC0091B90E /* SGMeMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMeMainView.m; sourceTree = "<group>"; };
+		A1DAA5C11D18F5B30091B90E /* SGMeHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMeHeadView.h; sourceTree = "<group>"; };
+		A1DAA5C21D18F5B30091B90E /* SGMeHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMeHeadView.m; sourceTree = "<group>"; };
+		A1DAA5C51D18F8590091B90E /* SGMeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMeData.h; sourceTree = "<group>"; };
+		A1DAA5C61D18F8590091B90E /* SGMeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMeData.m; sourceTree = "<group>"; };
+		A1DAA5C81D1916D50091B90E /* SGMeFunctionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMeFunctionData.h; sourceTree = "<group>"; };
+		A1DAA5C91D1916D50091B90E /* SGMeFunctionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMeFunctionData.m; sourceTree = "<group>"; };
+		A1DAA5E61D1927C20091B90E /* ZombieMovie.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZombieMovie.pch; sourceTree = "<group>"; };
+		A1DAA6001D1932E40091B90E /* SGPickerHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPickerHeadView.h; sourceTree = "<group>"; };
+		A1DAA6011D1932E40091B90E /* SGPickerHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPickerHeadView.m; sourceTree = "<group>"; };
+		A1DAA6031D19331B0091B90E /* SGPickerHeadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPickerHeadVC.h; sourceTree = "<group>"; };
+		A1DAA6041D19331B0091B90E /* SGPickerHeadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGPickerHeadVC.m; sourceTree = "<group>"; };
 		B165EA52C41EA63908DE05EA /* Pods-ZombieMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZombieMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZombieMovie/Pods-ZombieMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		D0A90310FB4AF40A338058BC /* Pods-ZombieMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZombieMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZombieMovie/Pods-ZombieMovie.release.xcconfig"; sourceTree = "<group>"; };
 		D9AAAE704069DEB94F07097E /* libPods-ZombieMovie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZombieMovie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -353,6 +372,7 @@
 				183819751D09424200EFB3D0 /* Controller */,
 				183819691D09420D00EFB3D0 /* Model */,
 				1838196C1D09420D00EFB3D0 /* View */,
+				A1DAA5E61D1927C20091B90E /* ZombieMovie.pch */,
 			);
 			path = Classe;
 			sourceTree = "<group>";
@@ -569,6 +589,8 @@
 		A1591ED71D16964600A9BB9C /* MeVC */ = {
 			isa = PBXGroup;
 			children = (
+				A1771D561D195F7A00711B6A /* MePhoto */,
+				A1DAA5C41D18F84C0091B90E /* MeData */,
 				A1DAA5B61D18E9740091B90E /* MeView */,
 				A1591ED81D16965400A9BB9C /* SGMeVC.h */,
 				A1591ED91D16965400A9BB9C /* SGMeVC.m */,
@@ -598,13 +620,55 @@
 			path = category;
 			sourceTree = "<group>";
 		};
+		A1771D561D195F7A00711B6A /* MePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				A1771D571D195F8D00711B6A /* SGCarameVC.h */,
+				A1771D581D195F8D00711B6A /* SGCarameVC.m */,
+			);
+			path = MePhoto;
+			sourceTree = "<group>";
+		};
 		A1DAA5B61D18E9740091B90E /* MeView */ = {
 			isa = PBXGroup;
 			children = (
+				A1DAA5FF1D1932D30091B90E /* PickerHead */,
+				A1DAA5C01D18F5990091B90E /* MeCell */,
 				A1DAA5BA1D18EDAC0091B90E /* SGMeMainView.h */,
 				A1DAA5BB1D18EDAC0091B90E /* SGMeMainView.m */,
 			);
 			path = MeView;
+			sourceTree = "<group>";
+		};
+		A1DAA5C01D18F5990091B90E /* MeCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAA5C11D18F5B30091B90E /* SGMeHeadView.h */,
+				A1DAA5C21D18F5B30091B90E /* SGMeHeadView.m */,
+			);
+			path = MeCell;
+			sourceTree = "<group>";
+		};
+		A1DAA5C41D18F84C0091B90E /* MeData */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAA5C51D18F8590091B90E /* SGMeData.h */,
+				A1DAA5C61D18F8590091B90E /* SGMeData.m */,
+				A1DAA5C81D1916D50091B90E /* SGMeFunctionData.h */,
+				A1DAA5C91D1916D50091B90E /* SGMeFunctionData.m */,
+			);
+			path = MeData;
+			sourceTree = "<group>";
+		};
+		A1DAA5FF1D1932D30091B90E /* PickerHead */ = {
+			isa = PBXGroup;
+			children = (
+				A1DAA6001D1932E40091B90E /* SGPickerHeadView.h */,
+				A1DAA6011D1932E40091B90E /* SGPickerHeadView.m */,
+				A1DAA6031D19331B0091B90E /* SGPickerHeadVC.h */,
+				A1DAA6041D19331B0091B90E /* SGPickerHeadVC.m */,
+			);
+			path = PickerHead;
 			sourceTree = "<group>";
 		};
 		DF2ACAF8A233146BD612562C /* Frameworks */ = {
@@ -823,11 +887,13 @@
 				18381A9B1D096DEE00EFB3D0 /* UIButton+WebCache.m in Sources */,
 				18381AA31D096DEE00EFB3D0 /* SVPHelper.m in Sources */,
 				18381A9A1D096DEE00EFB3D0 /* SDWebImagePrefetcher.m in Sources */,
+				A1DAA5C71D18F8590091B90E /* SGMeData.m in Sources */,
 				A1591EDE1D1696CF00A9BB9C /* SGPerFormingVC.m in Sources */,
 				18381A841D096DEE00EFB3D0 /* AFURLConnectionOperation.m in Sources */,
 				18381A8D1D096DEE00EFB3D0 /* UIProgressView+AFNetworking.m in Sources */,
 				18381A811D096DEE00EFB3D0 /* AFHTTPSessionManager.m in Sources */,
 				18381A9F1D096DEE00EFB3D0 /* UIImageView+HighlightedWebCache.m in Sources */,
+				A1DAA6051D19331B0091B90E /* SGPickerHeadVC.m in Sources */,
 				18381A851D096DEE00EFB3D0 /* AFURLRequestSerialization.m in Sources */,
 				A1591EE11D16995800A9BB9C /* LMLivePreview.m in Sources */,
 				183819781D09424200EFB3D0 /* ViewController.m in Sources */,
@@ -837,11 +903,13 @@
 				1838197B1D09427D00EFB3D0 /* LiveViewController.m in Sources */,
 				18381A9C1D096DEE00EFB3D0 /* UIImage+GIF.m in Sources */,
 				A1591EE81D16996200A9BB9C /* UIView+YYAdd.m in Sources */,
+				A1DAA5C31D18F5B30091B90E /* SGMeHeadView.m in Sources */,
 				183818A41D080ECC00EFB3D0 /* main.m in Sources */,
 				18381A911D096DEE00EFB3D0 /* ODRefreshControl.m in Sources */,
 				18381A8A1D096DEE00EFB3D0 /* UIAlertView+AFNetworking.m in Sources */,
 				18381A9D1D096DEE00EFB3D0 /* UIImage+MultiFormat.m in Sources */,
 				18381A981D096DEE00EFB3D0 /* SDWebImageDownloaderOperation.m in Sources */,
+				A1DAA6021D1932E40091B90E /* SGPickerHeadView.m in Sources */,
 				18381A8F1D096DEE00EFB3D0 /* UIWebView+AFNetworking.m in Sources */,
 				18381A891D096DEE00EFB3D0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				18381A901D096DEE00EFB3D0 /* NetWorkEngine.m in Sources */,
@@ -850,8 +918,10 @@
 				A1591EE71D16996200A9BB9C /* UIControl+YYAdd.m in Sources */,
 				18381A9E1D096DEE00EFB3D0 /* UIImage+WebP.m in Sources */,
 				18381A951D096DEE00EFB3D0 /* SDWebImageCompat.m in Sources */,
+				A1DAA5CA1D1916D50091B90E /* SGMeFunctionData.m in Sources */,
 				18381A8E1D096DEE00EFB3D0 /* UIRefreshControl+AFNetworking.m in Sources */,
 				18381A831D096DEE00EFB3D0 /* AFSecurityPolicy.m in Sources */,
+				A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */,
 				18381A971D096DEE00EFB3D0 /* SDWebImageDownloader.m in Sources */,
 				18381A921D096DEE00EFB3D0 /* MKAnnotationView+WebCache.m in Sources */,
 				18381A861D096DEE00EFB3D0 /* AFURLResponseSerialization.m in Sources */,
@@ -1007,6 +1077,7 @@
 					"$(PROJECT_DIR)/ZombieMovie",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PREFIX_HEADER = ZombieMovie/Classe/ZombieMovie.pch;
 				INFOPLIST_FILE = ZombieMovie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1034,6 +1105,7 @@
 					"$(PROJECT_DIR)/ZombieMovie",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PREFIX_HEADER = ZombieMovie/Classe/ZombieMovie.pch;
 				INFOPLIST_FILE = ZombieMovie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

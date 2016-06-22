@@ -1,0 +1,21 @@
+//
+//  ZombieMovie.pch
+//  ZombieMovie
+//
+//  Created by dujia on 16/6/21.
+//  Copyright © 2016年 sun. All rights reserved.
+//
+
+#ifndef ZombieMovie_pch
+#define ZombieMovie_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "UIColor+DJUtility.h"
+#import "NSString+DJUtility.h"
+
+
+
+#endif /* ZombieMovie_pch */

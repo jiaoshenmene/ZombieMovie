@@ -34,7 +34,7 @@
 
     //直播视频
 //    self.url = [NSURL URLWithString:_liveUrl];
-    self.url = [NSURL URLWithString:@"rtmp://10.129.157.86:1935/live1/1234"];
+    self.url = [NSURL URLWithString:@"rtmp://121.42.201.209/mytv/demo"];
     NSLog(@"url = %@",self.url);
     _player = [[IJKFFMoviePlayerController alloc] initWithContentURL:self.url withOptions:nil];
     UIView *playerView = [self.player view];
@@ -243,6 +243,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
 }
 

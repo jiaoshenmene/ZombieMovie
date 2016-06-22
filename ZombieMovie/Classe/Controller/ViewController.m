@@ -46,7 +46,7 @@
     
     _llvc = [[LookLiveVC alloc] init];
     _sgpfVC = [[SGPerFormingVC alloc] init];
-    _sgpfVC.title = @"去直播";
+    _sgpfVC.title = @"go";
     _sgmVC = [[SGMeVC alloc] init];
     _sgmVC.title = @"我的";
     
@@ -54,13 +54,13 @@
     _tabBarController = [[UITabBarController alloc] init];
     
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:_llvc];
-    
+    nav1.title = @"look";
     
 //    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:_sgpfVC];
 //    
 //    UINavigationController *nac3 = [[UINavigationController alloc] initWithRootViewController:_sgmVC];
    
-    NSArray<UIViewController *> *vcs = @[nav1,_sgpfVC,_sgmVC];
+    NSArray<UIViewController *> *vcs = @[nav1,_sgmVC,_sgpfVC];
     
     _tabBarController.viewControllers = vcs;
     
