@@ -32,7 +32,7 @@
 		183818C81D080ECC00EFB3D0 /* ZombieMovieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183818C71D080ECC00EFB3D0 /* ZombieMovieUITests.m */; };
 		183819721D09420D00EFB3D0 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838196B1D09420D00EFB3D0 /* ViewModel.m */; };
 		183819731D09420D00EFB3D0 /* ViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838196E1D09420D00EFB3D0 /* ViewTableViewCell.m */; };
-		183819781D09424200EFB3D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183819771D09424200EFB3D0 /* ViewController.m */; };
+		183819781D09424200EFB3D0 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 183819771D09424200EFB3D0 /* ViewController.mm */; };
 		1838197B1D09427D00EFB3D0 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838197A1D09427D00EFB3D0 /* LiveViewController.m */; };
 		18381A7F1D096DEE00EFB3D0 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18381A291D096DEE00EFB3D0 /* AFHTTPRequestOperation.m */; };
 		18381A801D096DEE00EFB3D0 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18381A2B1D096DEE00EFB3D0 /* AFHTTPRequestOperationManager.m */; };
@@ -80,6 +80,8 @@
 		A1591EE11D16995800A9BB9C /* LMLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE01D16995800A9BB9C /* LMLivePreview.m */; };
 		A1591EE71D16996200A9BB9C /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE41D16996200A9BB9C /* UIControl+YYAdd.m */; };
 		A1591EE81D16996200A9BB9C /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE61D16996200A9BB9C /* UIView+YYAdd.m */; };
+		A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */; };
+		A16FFE2D1D1AB25D009D3A89 /* SGLLStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE2C1D1AB25D009D3A89 /* SGLLStreamer.m */; };
 		A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1771D581D195F8D00711B6A /* SGCarameVC.m */; };
 		A1DAA5BC1D18EDAC0091B90E /* SGMeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAA5BB1D18EDAC0091B90E /* SGMeMainView.m */; };
 		A1DAA5C31D18F5B30091B90E /* SGMeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DAA5C21D18F5B30091B90E /* SGMeHeadView.m */; };
@@ -142,7 +144,7 @@
 		1838196D1D09420D00EFB3D0 /* ViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTableViewCell.h; sourceTree = "<group>"; };
 		1838196E1D09420D00EFB3D0 /* ViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTableViewCell.m; sourceTree = "<group>"; };
 		183819761D09424200EFB3D0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		183819771D09424200EFB3D0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		183819771D09424200EFB3D0 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		183819791D09427D00EFB3D0 /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
 		1838197A1D09427D00EFB3D0 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
 		18381A281D096DEE00EFB3D0 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -238,6 +240,10 @@
 		A1591EE41D16996200A9BB9C /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
 		A1591EE51D16996200A9BB9C /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		A1591EE61D16996200A9BB9C /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		A16FFE281D1AABF0009D3A89 /* SGLookLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLookLiveModel.h; sourceTree = "<group>"; };
+		A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLookLiveModel.m; sourceTree = "<group>"; };
+		A16FFE2B1D1AB25D009D3A89 /* SGLLStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLLStreamer.h; sourceTree = "<group>"; };
+		A16FFE2C1D1AB25D009D3A89 /* SGLLStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLLStreamer.m; sourceTree = "<group>"; };
 		A1771D571D195F8D00711B6A /* SGCarameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCarameVC.h; sourceTree = "<group>"; };
 		A1771D581D195F8D00711B6A /* SGCarameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCarameVC.m; sourceTree = "<group>"; };
 		A1DAA5BA1D18EDAC0091B90E /* SGMeMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMeMainView.h; sourceTree = "<group>"; };
@@ -380,6 +386,7 @@
 		183819691D09420D00EFB3D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A16FFE271D1AABDD009D3A89 /* LookLiveModel */,
 				1838196A1D09420D00EFB3D0 /* ViewModel.h */,
 				1838196B1D09420D00EFB3D0 /* ViewModel.m */,
 			);
@@ -402,7 +409,7 @@
 				A1591ED71D16964600A9BB9C /* MeVC */,
 				A1591DE31D168A2700A9BB9C /* LookLiveVC */,
 				183819761D09424200EFB3D0 /* ViewController.h */,
-				183819771D09424200EFB3D0 /* ViewController.m */,
+				183819771D09424200EFB3D0 /* ViewController.mm */,
 				183819791D09427D00EFB3D0 /* LiveViewController.h */,
 				1838197A1D09427D00EFB3D0 /* LiveViewController.m */,
 			);
@@ -618,6 +625,17 @@
 				A1591EE61D16996200A9BB9C /* UIView+YYAdd.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		A16FFE271D1AABDD009D3A89 /* LookLiveModel */ = {
+			isa = PBXGroup;
+			children = (
+				A16FFE281D1AABF0009D3A89 /* SGLookLiveModel.h */,
+				A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */,
+				A16FFE2B1D1AB25D009D3A89 /* SGLLStreamer.h */,
+				A16FFE2C1D1AB25D009D3A89 /* SGLLStreamer.m */,
+			);
+			path = LookLiveModel;
 			sourceTree = "<group>";
 		};
 		A1771D561D195F7A00711B6A /* MePhoto */ = {
@@ -896,7 +914,7 @@
 				A1DAA6051D19331B0091B90E /* SGPickerHeadVC.m in Sources */,
 				18381A851D096DEE00EFB3D0 /* AFURLRequestSerialization.m in Sources */,
 				A1591EE11D16995800A9BB9C /* LMLivePreview.m in Sources */,
-				183819781D09424200EFB3D0 /* ViewController.m in Sources */,
+				183819781D09424200EFB3D0 /* ViewController.mm in Sources */,
 				18381A991D096DEE00EFB3D0 /* SDWebImageManager.m in Sources */,
 				18381A8B1D096DEE00EFB3D0 /* UIButton+AFNetworking.m in Sources */,
 				18381A8C1D096DEE00EFB3D0 /* UIImageView+AFNetworking.m in Sources */,
@@ -913,12 +931,14 @@
 				18381A8F1D096DEE00EFB3D0 /* UIWebView+AFNetworking.m in Sources */,
 				18381A891D096DEE00EFB3D0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				18381A901D096DEE00EFB3D0 /* NetWorkEngine.m in Sources */,
+				A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */,
 				18381A801D096DEE00EFB3D0 /* AFHTTPRequestOperationManager.m in Sources */,
 				18381A961D096DEE00EFB3D0 /* SDWebImageDecoder.m in Sources */,
 				A1591EE71D16996200A9BB9C /* UIControl+YYAdd.m in Sources */,
 				18381A9E1D096DEE00EFB3D0 /* UIImage+WebP.m in Sources */,
 				18381A951D096DEE00EFB3D0 /* SDWebImageCompat.m in Sources */,
 				A1DAA5CA1D1916D50091B90E /* SGMeFunctionData.m in Sources */,
+				A16FFE2D1D1AB25D009D3A89 /* SGLLStreamer.m in Sources */,
 				18381A8E1D096DEE00EFB3D0 /* UIRefreshControl+AFNetworking.m in Sources */,
 				18381A831D096DEE00EFB3D0 /* AFSecurityPolicy.m in Sources */,
 				A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */,

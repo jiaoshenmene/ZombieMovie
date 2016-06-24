@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewModel.h"
+
+@class SGLookLiveModel;
+
+
 @interface ViewTableViewCell : UITableViewCell
 @property (nonatomic, strong)UIImageView * iconImage;// 用户头像
 
@@ -18,6 +22,8 @@
 @property (nonatomic, strong)UILabel *peopleNumber;// 观看人数
 
 @property (nonatomic, strong)UIImageView * coverImage;// 封面
+
+@property (nonatomic , strong) SGLookLiveModel *sgllModel;
 
 @property (nonatomic, strong)ViewModel * viewModel;
 @end

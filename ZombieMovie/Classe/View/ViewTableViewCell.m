@@ -8,8 +8,12 @@
 
 #import "ViewTableViewCell.h"
 #import "UIImageView+WebCache.h"
+#import "SGLookLiveModel.h"
+
 #define UIScreen_Width [UIScreen mainScreen].bounds.size.width
 #define UIScreen_Height [UIScreen mainScreen].bounds.size.height
+
+
 @implementation ViewTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -120,6 +124,31 @@
     // 观看人数
     _peopleNumber.text = [NSString stringWithFormat:@"%d",viewModel.online_users];
     
+    
+
+}
+
+- (void)setSgllModel:(SGLookLiveModel *)sgllModel
+{
+    
+    _sgllModel = sgllModel;
+    
+    // 用户名
+    _nameLabel.text = sgllModel.owner;
+    
+    // 用户所在城市
+    if ([sgllModel.streamer.location isEqualToString:@""]) {
+        [_address setTitle:@"难道在火星?" forState:(UIControlStateNormal)];
+    }else{
+        [_address setTitle:sgllModel.streamer.location forState:(UIControlStateNormal)];
+    }
+    
+    // 用户Image
+    [_iconImage sd_setImageWithURL:[NSURL URLWithString:sgllModel.thumbnailLink]];
+    [_coverImage sd_setImageWithURL:[NSURL URLWithString:sgllModel.thumbnailLink]];
+    
+    // 观看人数
+    _peopleNumber.text = [NSString stringWithFormat:@"%d",[sgllModel.totalStickers intValue]];
     
 
 }

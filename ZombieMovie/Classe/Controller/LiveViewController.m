@@ -33,8 +33,8 @@
     self.view.backgroundColor = [UIColor blackColor];
 
     //直播视频
-//    self.url = [NSURL URLWithString:_liveUrl];
-    self.url = [NSURL URLWithString:@"rtmp://121.42.201.209/mytv/demo"];
+    self.url = [NSURL URLWithString:_liveUrl];
+//    self.url = [NSURL URLWithString:@"rtmp://121.42.201.209/mytv/demo"];
     NSLog(@"url = %@",self.url);
     _player = [[IJKFFMoviePlayerController alloc] initWithContentURL:self.url withOptions:nil];
     UIView *playerView = [self.player view];
