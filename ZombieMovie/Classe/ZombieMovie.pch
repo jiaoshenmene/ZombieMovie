@@ -16,7 +16,8 @@
 #import "UIColor+DJUtility.h"
 #import "NSString+DJUtility.h"
 #import "YYModel.h"
-
+#import "DJCommDef.h"
+#import <AdSupport/AdSupport.h>
 
 const static NSString *sg_requestHead = @"http://121.42.201.209:8081";
 

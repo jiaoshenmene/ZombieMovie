@@ -58,9 +58,9 @@
     
 //    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:_sgpfVC];
 //    
-//    UINavigationController *nac3 = [[UINavigationController alloc] initWithRootViewController:_sgmVC];
+    UINavigationController *nac3 = [[UINavigationController alloc] initWithRootViewController:_sgmVC];
    
-    NSArray<UIViewController *> *vcs = @[nav1,_sgmVC,_sgpfVC];
+    NSArray<UIViewController *> *vcs = @[nac3,nav1,_sgpfVC];
     
     _tabBarController.viewControllers = vcs;
     

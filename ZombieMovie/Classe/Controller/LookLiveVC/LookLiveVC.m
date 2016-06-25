@@ -10,11 +10,11 @@
 
 #import "ViewTableViewCell.h"
 #import "ODRefreshControl.h"
-#import "NetWorkEngine.h"
 #import "ViewModel.h"
 #import "LiveViewController.h"
 #import "SGLookLiveModel.h"
 
+#import "SQNetWorkManger.h"
 
 // 映客接口
 //#define HomeData [NSString stringWithFormat:@"http://service.ingkee.com/api/live/gettop?imsi=&uid=17800399&proto=5&idfa=A1205EB8-0C9A-4131-A2A2-27B9A1E06622&lc=0000000000000026&cc=TG0001&imei=&sid=20i0a3GAvc8ykfClKMAen8WNeIBKrUwgdG9whVJ0ljXi1Af8hQci3&cv=IK3.1.00_Iphone&devi=bcb94097c7a3f3314be284c8a5be2aaeae66d6ab&conn=Wifi&ua=iPhone&idfv=DEBAD23B-7C6A-4251-B8AF-A95910B778B7&osversion=ios_9.300000&count=5&multiaddr=1"]
@@ -162,21 +162,58 @@
 - (void)newData
 {
     __weak __typeof(self)vc = self;
-    NetWorkEngine * netWork = [[NetWorkEngine alloc] init];
-    [netWork AfJSONGetRequest:[NSString stringWithFormat:@"%@/%@",sg_requestHead,HomeData]];
-    netWork.successfulBlock = ^(id object){
-        NSLog(@"object = %@",object);
-//        NSArray *listArray = [object objectForKey:@"lives"];
-        for (NSDictionary *dic in object) {
-            SGLookLiveModel *model = [[SGLookLiveModel alloc] init];
-            [model yy_modelSetWithJSON:dic];
+//    SQNetWorkManger *manager = [SQNetWorkManger getInstance];
+//    [manager GET:[NSString stringWithFormat:@"%@/%@",sg_requestHead,HomeData] params:nil];
+//    manager.successfulBlock = ^(id object)
+//    {
+//        NSLog(@"object = %@",object);
+//        //        NSArray *listArray = [object objectForKey:@"lives"];
+//        for (NSDictionary *dic in object) {
+//            SGLookLiveModel *model = [[SGLookLiveModel alloc] init];
+//            [model yy_modelSetWithJSON:dic];
+//            
+//            [vc.dataArray addObject:model];
+//            
+//        }
+//        [self.tableView reloadData];
+//
+//    };
+//    manager.failBlock = ^(id object)
+//    {
+//        NSLog(@"%@",object);
+//    };
+    NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
+    [request setHTTPMethod:@"GET"]; //指定请求方式
+    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",sg_requestHead,HomeData]]]; //设置请求的地址
+//    [request setHTTPBody:nil];  //设置请求的参数
+    
+    NSError * error;
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        __strong __typeof(self)strongself = vc;
+        if (error) {
+            NSLog(@"error : %@",[error localizedDescription]);
+        }else{
+           
             
-            [vc.dataArray addObject:model];
-            
+            NSArray *content = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+             NSLog(@"response : %@",content);
+            for (NSDictionary *dic in content) {
+                SGLookLiveModel *model = [[SGLookLiveModel alloc] init];
+                [model yy_modelSetWithJSON:dic];
+                
+                [strongself.dataArray addObject:model];
+                
+            }
+//            dispatch_get_main_queue()
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                 [self.tableView reloadData];
+            });
+           
+
         }
-        [self.tableView reloadData];
-        //        NSLog(@"%@",object);
-    };
+    }];
     
 }
 

@@ -10,6 +10,7 @@
 #import "UIControl+YYAdd.h"
 #import "UIView+YYAdd.h"
 #import "LFLiveSession.h"
+#import "SQNetWorkManger.h"
 
 
 @interface LMLivePreview ()<LFLiveSessionDelegate>
@@ -36,6 +37,16 @@
         [self.containerView addSubview:self.cameraButton];
         [self.containerView addSubview:self.beautyButton];
         [self.containerView addSubview:self.startLiveButton];
+        
+        NSDictionary *tmp = @{@"description":@"KKK ",@"title":@"Jkkk"};
+        NSString *string = [tmp yy_modelToJSONString];
+        
+        SQNetWorkManger *manager = [SQNetWorkManger getInstance];
+        [manager POST:@"api/streams" params:string success:^(id object) {
+            NSLog(@"object = %@",object);
+        } failed:^(NSError *error) {
+            
+        }];
     }
     return self;
 }
@@ -268,6 +279,8 @@
 }
 
 - (UIButton*)startLiveButton{
+    
+    
     if(!_startLiveButton){
         _startLiveButton = [UIButton new];
         _startLiveButton.size = CGSizeMake(self.width - 60, 44);
@@ -285,7 +298,13 @@
             if(_self.startLiveButton.selected){
                 [_self.startLiveButton setTitle:@"结束直播" forState:UIControlStateNormal];
                 LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
-                stream.url = @"rtmp://121.42.201.209/mytv/demo1";
+                //@"shenqi"
+                ASIdentifierManager *identifierManager = [ASIdentifierManager sharedManager];
+                NSUUID *uuid = identifierManager.advertisingIdentifier;
+                NSString *userUrl = uuid.UUIDString;
+//                userUrl = @"shenqi";
+                stream.url = [NSString stringWithFormat:@"rtmp://121.42.201.209/mytv/%@",userUrl];
+                NSLog(@"stream.url = %@",stream.url);
                 //stream.url = @"rtmp://daniulive.com:1935/live/stream2399";
                 [_self.session startLive:stream];
             }else{

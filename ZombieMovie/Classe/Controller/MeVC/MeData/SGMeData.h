@@ -12,5 +12,6 @@
 
 @property (nonatomic , assign) float cellHeight;
 
+@property (nonatomic , strong) NSString *identify;
 
 @end

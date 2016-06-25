@@ -9,6 +9,13 @@
 #import "SGMeMainView.h"
 #import "SGMeHeadView.h"
 
+
+
+
+static NSString *cellIdentifier = @"cellIdentifier";
+
+static NSString *cellSetting = @"cellSetting";
+
 @interface SGMeMainView()<UITableViewDelegate,UITableViewDataSource,SGMeHeadViewDel>
 @property (nonatomic , strong) UITableView *mTableView;
 
@@ -26,8 +33,18 @@
         
         _contentArray = [NSMutableArray array];
         SGMeData *mData = [[SGMeData alloc] init];
+        mData.identify = @"cellIdentifier";
         mData.cellHeight = 300;
+        
+        
         [_contentArray addObject:mData];
+        
+        SGMeData *mData1 = [[SGMeData alloc] init];
+        mData1.identify = cellSetting;
+        mData1.cellHeight = 80;
+        
+        
+        [_contentArray addObject:mData1];
         
     }
     return self;
@@ -48,18 +65,45 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"cellIdentifier";
-    SGMeHeadView *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (!cell) {
-        cell = [[SGMeHeadView alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
-        cell.delegate = self;
-    }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     SGMeData *mData = [_contentArray objectAtIndex:indexPath.row];
-    [cell setContentData:mData];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:mData.identify];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    if ([cellIdentifier isEqualToString:mData.identify]) {
+        if (!cell) {
+            SGMeHeadView *tmpCell = [[SGMeHeadView alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:mData.identify];
+            
+            tmpCell.delegate = self;
+            cell = tmpCell;
+            
+        }
+        [(SGMeHeadView *)cell setContentData:mData];
+    }else if([cellSetting isEqualToString:mData.identify]){
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:mData.identify];
+        }
+        cell.textLabel.text = @"setting";
+        
+    }
+    
+    
+    
     
     
     return cell;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SGMeData *mData = [_contentArray objectAtIndex:indexPath.row];
+    if ([mData.identify isEqualToString:cellSetting]) {
+        if ([_delegate respondsToSelector:@selector(gotoSettingVC)]) {
+            [_delegate gotoSettingVC];
+        }
+    }
     
 }
 

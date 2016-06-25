@@ -9,6 +9,8 @@
 #import "SGMeVC.h"
 #import "SGMeMainView.h"
 #import "SGPickerHeadVC.h"
+#import "LoginVC.h"
+
 @interface SGMeVC()<SGMeMainViewDel>
 
 @property (nonatomic , strong) SGMeMainView *mMainView;
@@ -34,5 +36,10 @@
     }];
 }
 
-
+- (void)gotoSettingVC
+{
+    LoginVC *loginvc = [[LoginVC alloc] init];
+    [self.navigationController pushViewController:loginvc animated:YES];
+    
+}
 @end

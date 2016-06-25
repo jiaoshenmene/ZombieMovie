@@ -13,6 +13,9 @@
 
 - (void)iconMethod:(id)sender;
 
+- (void)gotoSettingVC;
+
+
 @end
 
 @interface SGMeMainView : UIView
