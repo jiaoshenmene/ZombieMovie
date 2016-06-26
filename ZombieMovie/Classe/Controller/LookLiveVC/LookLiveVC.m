@@ -36,11 +36,14 @@
 {
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillAppear:animated];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:YES animated:animated];
+    
+   
     [super viewWillAppear:animated];
 }
 
@@ -50,7 +53,7 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    
+//    [self hideTabBarController:NO];
     self.dataArray = [NSMutableArray array];
     self.navigationController.title = @"直播";
     self.title =@"直播";
@@ -111,8 +114,10 @@
     SGLookLiveModel * viewModel = self.dataArray[indexPath.row];
     liveVc.liveUrl = viewModel.viewLink;
     liveVc.imageUrl = viewModel.thumbnailLink;
-    [self.navigationController pushViewController:liveVc animated:true];
     self.navigationController.navigationBar.hidden = YES;
+    liveVc.hidesBottomBarWhenPushed = YES;
+
+    [self.navigationController pushViewController:liveVc animated:true];
     
 }
 
@@ -162,26 +167,7 @@
 - (void)newData
 {
     __weak __typeof(self)vc = self;
-//    SQNetWorkManger *manager = [SQNetWorkManger getInstance];
-//    [manager GET:[NSString stringWithFormat:@"%@/%@",sg_requestHead,HomeData] params:nil];
-//    manager.successfulBlock = ^(id object)
-//    {
-//        NSLog(@"object = %@",object);
-//        //        NSArray *listArray = [object objectForKey:@"lives"];
-//        for (NSDictionary *dic in object) {
-//            SGLookLiveModel *model = [[SGLookLiveModel alloc] init];
-//            [model yy_modelSetWithJSON:dic];
-//            
-//            [vc.dataArray addObject:model];
-//            
-//        }
-//        [self.tableView reloadData];
-//
-//    };
-//    manager.failBlock = ^(id object)
-//    {
-//        NSLog(@"%@",object);
-//    };
+
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
     [request setHTTPMethod:@"GET"]; //指定请求方式
     [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",sg_requestHead,HomeData]]]; //设置请求的地址
@@ -231,10 +217,13 @@
         
         //向上拖动，隐藏导航栏
         [self.navigationController setNavigationBarHidden:true animated:true];
+       self.tabBarController.tabBar.hidden = YES;
+        
     }
     else if (velocity>5) {
         //向下拖动，显示导航栏
         [self.navigationController setNavigationBarHidden:false animated:true];
+        self.tabBarController.tabBar.hidden = NO;
     }
     else if(velocity==0){
         

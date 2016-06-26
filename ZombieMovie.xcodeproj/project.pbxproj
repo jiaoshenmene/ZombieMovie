@@ -64,6 +64,9 @@
 		A1591EE11D16995800A9BB9C /* LMLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE01D16995800A9BB9C /* LMLivePreview.m */; };
 		A1591EE71D16996200A9BB9C /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE41D16996200A9BB9C /* UIControl+YYAdd.m */; };
 		A1591EE81D16996200A9BB9C /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591EE61D16996200A9BB9C /* UIView+YYAdd.m */; };
+		A16CCC571D1FA847009E0E73 /* UIViewController+GGUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CCC561D1FA847009E0E73 /* UIViewController+GGUtility.m */; };
+		A16CCC5B1D1FB3C8009E0E73 /* GGLookChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CCC5A1D1FB3C8009E0E73 /* GGLookChatView.m */; };
+		A16CCC5F1D1FB7AD009E0E73 /* GGLookChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CCC5E1D1FB7AD009E0E73 /* GGLookChatCell.m */; };
 		A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */; };
 		A16FFE2D1D1AB25D009D3A89 /* SGLLStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE2C1D1AB25D009D3A89 /* SGLLStreamer.m */; };
 		A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1771D581D195F8D00711B6A /* SGCarameVC.m */; };
@@ -190,6 +193,12 @@
 		A1591EE41D16996200A9BB9C /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
 		A1591EE51D16996200A9BB9C /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		A1591EE61D16996200A9BB9C /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		A16CCC551D1FA847009E0E73 /* UIViewController+GGUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GGUtility.h"; sourceTree = "<group>"; };
+		A16CCC561D1FA847009E0E73 /* UIViewController+GGUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GGUtility.m"; sourceTree = "<group>"; };
+		A16CCC591D1FB3C8009E0E73 /* GGLookChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGLookChatView.h; sourceTree = "<group>"; };
+		A16CCC5A1D1FB3C8009E0E73 /* GGLookChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGLookChatView.m; sourceTree = "<group>"; };
+		A16CCC5D1D1FB7AD009E0E73 /* GGLookChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGLookChatCell.h; sourceTree = "<group>"; };
+		A16CCC5E1D1FB7AD009E0E73 /* GGLookChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGLookChatCell.m; sourceTree = "<group>"; };
 		A16FFE281D1AABF0009D3A89 /* SGLookLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLookLiveModel.h; sourceTree = "<group>"; };
 		A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLookLiveModel.m; sourceTree = "<group>"; };
 		A16FFE2B1D1AB25D009D3A89 /* SGLLStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLLStreamer.h; sourceTree = "<group>"; };
@@ -346,6 +355,7 @@
 		1838196C1D09420D00EFB3D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A16CCC581D1FB3B0009E0E73 /* GGLookChatView */,
 				1838196D1D09420D00EFB3D0 /* ViewTableViewCell.h */,
 				1838196E1D09420D00EFB3D0 /* ViewTableViewCell.m */,
 			);
@@ -523,8 +533,29 @@
 				A1591EE41D16996200A9BB9C /* UIControl+YYAdd.m */,
 				A1591EE51D16996200A9BB9C /* UIView+YYAdd.h */,
 				A1591EE61D16996200A9BB9C /* UIView+YYAdd.m */,
+				A16CCC551D1FA847009E0E73 /* UIViewController+GGUtility.h */,
+				A16CCC561D1FA847009E0E73 /* UIViewController+GGUtility.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		A16CCC581D1FB3B0009E0E73 /* GGLookChatView */ = {
+			isa = PBXGroup;
+			children = (
+				A16CCC5C1D1FB79F009E0E73 /* GGLookChatCell */,
+				A16CCC591D1FB3C8009E0E73 /* GGLookChatView.h */,
+				A16CCC5A1D1FB3C8009E0E73 /* GGLookChatView.m */,
+			);
+			path = GGLookChatView;
+			sourceTree = "<group>";
+		};
+		A16CCC5C1D1FB79F009E0E73 /* GGLookChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				A16CCC5D1D1FB7AD009E0E73 /* GGLookChatCell.h */,
+				A16CCC5E1D1FB7AD009E0E73 /* GGLookChatCell.m */,
+			);
+			path = GGLookChatCell;
 			sourceTree = "<group>";
 		};
 		A16FFE271D1AABDD009D3A89 /* LookLiveModel */ = {
@@ -798,10 +829,13 @@
 				18381AA21D096DEE00EFB3D0 /* SVIndefiniteAnimatedView.m in Sources */,
 				18381A931D096DEE00EFB3D0 /* NSData+ImageContentType.m in Sources */,
 				A1591EDA1D16965400A9BB9C /* SGMeVC.m in Sources */,
+				A16CCC5B1D1FB3C8009E0E73 /* GGLookChatView.m in Sources */,
+				A16CCC5F1D1FB7AD009E0E73 /* GGLookChatCell.m in Sources */,
 				18381AA51D096DEE00EFB3D0 /* SVProgressHUD.m in Sources */,
 				183819731D09420D00EFB3D0 /* ViewTableViewCell.m in Sources */,
 				18381A9B1D096DEE00EFB3D0 /* UIButton+WebCache.m in Sources */,
 				18381AA31D096DEE00EFB3D0 /* SVPHelper.m in Sources */,
+				A16CCC571D1FA847009E0E73 /* UIViewController+GGUtility.m in Sources */,
 				18381A9A1D096DEE00EFB3D0 /* SDWebImagePrefetcher.m in Sources */,
 				A1DAA5C71D18F8590091B90E /* SGMeData.m in Sources */,
 				A1591EDE1D1696CF00A9BB9C /* SGPerFormingVC.m in Sources */,
@@ -904,7 +938,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jia DU (5GWRQ34RRX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jia DU (5GWRQ34RRX)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -948,7 +983,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jia DU (5GWRQ34RRX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jia DU (5GWRQ34RRX)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -973,7 +1009,7 @@
 			baseConfigurationReference = B165EA52C41EA63908DE05EA /* Pods-ZombieMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jia DU (5GWRQ34RRX)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1001,7 +1037,7 @@
 			baseConfigurationReference = D0A90310FB4AF40A338058BC /* Pods-ZombieMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jia DU (5GWRQ34RRX)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

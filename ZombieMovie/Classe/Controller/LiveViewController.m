@@ -27,6 +27,8 @@
 @implementation LiveViewController
 
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -49,8 +51,36 @@
     [self installMovieNotificationObservers];
     [self loadingView];
     [self changeBackBtn];
-   
+    [self requestChatInfo];
     // Do any additional setup after loading the view.
+}
+
+- (void)requestChatInfo
+{
+    NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
+    [request setHTTPMethod:@"GET"]; //指定请求方式
+    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",@"http://121.42.201.209/sub/example"]]]; //设置请求的地址
+    //    [request setHTTPBody:nil];  //设置请求的参数
+    __weak __typeof(self)vc = self;
+    NSError * error;
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        __strong __typeof(self)strongself = vc;
+        if (error) {
+            NSLog(@"error : %@",[error localizedDescription]);
+        }else{
+            NSLog(@"%@",data);
+            
+            NSArray *content = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+            NSLog(@"%@",content);
+            
+            
+        }
+    }];
+    
+    
+    
 }
 
 // 加载图
@@ -70,6 +100,8 @@
     if (![self.player isPlaying]) {
         [self.player prepareToPlay];
     }
+    
+//    [self hideTabBarController:YES];
 }
 
 #pragma Selector func
