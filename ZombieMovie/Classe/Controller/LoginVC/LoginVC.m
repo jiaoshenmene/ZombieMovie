@@ -15,6 +15,8 @@
 
 @property (nonatomic , strong) UIButton *loginBtn;
 @property (nonatomic , strong) UIButton *registerBtn;
+
+@property (nonatomic , strong) GGRegisterVC *registervc;
 @end
 
 @implementation LoginVC
@@ -49,8 +51,8 @@
 - (void) registerMethod
 {
     
-    GGRegisterVC *VC = [[GGRegisterVC alloc] init];
-    [self presentViewController:VC animated:YES completion:^{
+    _registervc = [[GGRegisterVC alloc] init];
+    [self presentViewController:_registervc animated:YES completion:^{
         
     }];
     

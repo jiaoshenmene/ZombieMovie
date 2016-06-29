@@ -7,8 +7,10 @@
 //
 
 
+#import "GGHTTPManager.h"
 
-@interface GGRegisterFunc : NSObject
+
+@interface GGRegisterFunc : GGHTTPManager
 
 - (void)requestRegist:(NSString *)url params:(NSDictionary *)params;
 
