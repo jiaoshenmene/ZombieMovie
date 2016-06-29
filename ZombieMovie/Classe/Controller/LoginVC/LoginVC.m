@@ -8,13 +8,13 @@
 
 #import "LoginVC.h"
 #import "SQNetWorkManger.h"
-
+#import "GGRegisterVC.h"
 
 
 @interface LoginVC()
 
 @property (nonatomic , strong) UIButton *loginBtn;
-
+@property (nonatomic , strong) UIButton *registerBtn;
 @end
 
 @implementation LoginVC
@@ -30,6 +30,29 @@
     
     [_loginBtn addTarget:self action:@selector(loginMethod) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_loginBtn];
+    
+    
+    
+    _registerBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    _registerBtn.frame = CGRectMake(150, CGRectGetMaxY(_loginBtn.frame) + 100, 100, 30);
+    [_registerBtn setTitle:@"注册" forState:UIControlStateNormal];
+    [_registerBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    [_registerBtn addTarget:self action:@selector(registerMethod) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_registerBtn];
+    
+    
+    
+}
+
+
+- (void) registerMethod
+{
+    
+    GGRegisterVC *VC = [[GGRegisterVC alloc] init];
+    [self presentViewController:VC animated:YES completion:^{
+        
+    }];
     
 }
 

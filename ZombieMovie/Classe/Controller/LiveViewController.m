@@ -11,8 +11,10 @@
 #import "SVProgressHUD.h"
 #import "UIImageView+WebCache.h"
 #import <Accelerate/Accelerate.h>
+#import "SQNetWorkManger.h"
 
-@interface LiveViewController ()
+
+@interface LiveViewController ()<NSURLConnectionDelegate>
 @property (atomic, strong) NSURL *url;
 
 @property (atomic, retain) id <IJKMediaPlayback> player;
@@ -51,29 +53,46 @@
     [self installMovieNotificationObservers];
     [self loadingView];
     [self changeBackBtn];
-    [self requestChatInfo];
+//    [self requestChatInfo];
     // Do any additional setup after loading the view.
 }
 
 - (void)requestChatInfo
 {
+    
+    
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
     [request setHTTPMethod:@"GET"]; //指定请求方式
+//    [request setValue:@"keep-alive" forHTTPHeaderField:@"Connection"];
+//    [request setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
+//    [request setValue:@"chunked" forHTTPHeaderField:@"Transfer-Encoding"];
+//    [request setValue:@"ios" forHTTPHeaderField:@"User-Agent"];
+//    [request setValue:@"" forHTTPHeaderField:@""];
+//    [request setTimeoutInterval:60 *1000 *60*10];
     [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",@"http://121.42.201.209/sub/example"]]]; //设置请求的地址
     //    [request setHTTPBody:nil];  //设置请求的参数
+    NSLog(@"%@",request.allHTTPHeaderFields);
+    
+    
     __weak __typeof(self)vc = self;
     NSError * error;
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+
+    
     
     [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        
+        NSLog(@"ffffffffffffffff");
+        NSLog(@"response = %@",response);
+        NSLog(@"data = %@",data);
         __strong __typeof(self)strongself = vc;
         if (error) {
             NSLog(@"error : %@",[error localizedDescription]);
         }else{
             NSLog(@"%@",data);
             
-            NSArray *content = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
-            NSLog(@"%@",content);
+//            NSArray *content = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+//            NSLog(@"%@",content);
             
             
         }
@@ -81,6 +100,13 @@
     
     
     
+}
+
+
+- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+{
+    NSLog(@"%@",connection.originalRequest);
+    NSLog(@"%@",challenge);
 }
 
 // 加载图

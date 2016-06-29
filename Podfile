@@ -7,4 +7,7 @@ pod 'LFLiveKit', '~> 1.5.2'
 pod 'DJCommonFrameWork' ,:path => '/Users/sogou/Work/MYGit/GGLibs/DJCommonFrameWork'
 pod 'YYModel'
 pod ‘AFNetworking’
+
+
+pod ‘OpenCV’
 end

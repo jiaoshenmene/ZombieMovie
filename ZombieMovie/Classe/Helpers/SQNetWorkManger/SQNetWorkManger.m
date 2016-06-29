@@ -31,9 +31,10 @@ static SQNetWorkManger *_manager = nil;
 
         
         _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/plain",nil];
+//        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/plain",nil];
+        _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"*/*",nil];
         
-        _manager.requestSerializer.timeoutInterval = 10;
+        _manager.requestSerializer.timeoutInterval = 10000000000;
         
 //        AFSecurityPolicy* policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
 //        

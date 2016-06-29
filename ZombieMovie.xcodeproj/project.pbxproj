@@ -67,6 +67,13 @@
 		A16CCC571D1FA847009E0E73 /* UIViewController+GGUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CCC561D1FA847009E0E73 /* UIViewController+GGUtility.m */; };
 		A16CCC5B1D1FB3C8009E0E73 /* GGLookChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CCC5A1D1FB3C8009E0E73 /* GGLookChatView.m */; };
 		A16CCC5F1D1FB7AD009E0E73 /* GGLookChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CCC5E1D1FB7AD009E0E73 /* GGLookChatCell.m */; };
+		A16CD0321D224E52009E0E73 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16CD0311D224E52009E0E73 /* opencv2.framework */; };
+		A16CD1FB1D2385B3009E0E73 /* GGChatLib.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD1B01D2385B3009E0E73 /* GGChatLib.m */; };
+		A16CD1FC1D2385B3009E0E73 /* GGRegisterFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD1B41D2385B3009E0E73 /* GGRegisterFunc.m */; };
+		A16CD1FD1D2385B3009E0E73 /* GGRegisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD1B61D2385B3009E0E73 /* GGRegisterModel.m */; };
+		A16CD1FE1D2385B3009E0E73 /* GGRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD1BA1D2385B3009E0E73 /* GGRegisterVC.m */; };
+		A16CD1FF1D2385B3009E0E73 /* GGRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD1BD1D2385B3009E0E73 /* GGRegisterView.m */; };
+		A16CD2091D2386D0009E0E73 /* GGHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2081D2386D0009E0E73 /* GGHTTPManager.m */; };
 		A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */; };
 		A16FFE2D1D1AB25D009D3A89 /* SGLLStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE2C1D1AB25D009D3A89 /* SGLLStreamer.m */; };
 		A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1771D581D195F8D00711B6A /* SGCarameVC.m */; };
@@ -199,6 +206,19 @@
 		A16CCC5A1D1FB3C8009E0E73 /* GGLookChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGLookChatView.m; sourceTree = "<group>"; };
 		A16CCC5D1D1FB7AD009E0E73 /* GGLookChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGLookChatCell.h; sourceTree = "<group>"; };
 		A16CCC5E1D1FB7AD009E0E73 /* GGLookChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGLookChatCell.m; sourceTree = "<group>"; };
+		A16CD0311D224E52009E0E73 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = SOURCE_ROOT; };
+		A16CD1AF1D2385B3009E0E73 /* GGChatLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGChatLib.h; sourceTree = "<group>"; };
+		A16CD1B01D2385B3009E0E73 /* GGChatLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGChatLib.m; sourceTree = "<group>"; };
+		A16CD1B31D2385B3009E0E73 /* GGRegisterFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGRegisterFunc.h; sourceTree = "<group>"; };
+		A16CD1B41D2385B3009E0E73 /* GGRegisterFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGRegisterFunc.m; sourceTree = "<group>"; };
+		A16CD1B51D2385B3009E0E73 /* GGRegisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGRegisterModel.h; sourceTree = "<group>"; };
+		A16CD1B61D2385B3009E0E73 /* GGRegisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGRegisterModel.m; sourceTree = "<group>"; };
+		A16CD1B91D2385B3009E0E73 /* GGRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGRegisterVC.h; sourceTree = "<group>"; };
+		A16CD1BA1D2385B3009E0E73 /* GGRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGRegisterVC.m; sourceTree = "<group>"; };
+		A16CD1BC1D2385B3009E0E73 /* GGRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGRegisterView.h; sourceTree = "<group>"; };
+		A16CD1BD1D2385B3009E0E73 /* GGRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGRegisterView.m; sourceTree = "<group>"; };
+		A16CD2071D2386D0009E0E73 /* GGHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGHTTPManager.h; sourceTree = "<group>"; };
+		A16CD2081D2386D0009E0E73 /* GGHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGHTTPManager.m; sourceTree = "<group>"; };
 		A16FFE281D1AABF0009D3A89 /* SGLookLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLookLiveModel.h; sourceTree = "<group>"; };
 		A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLookLiveModel.m; sourceTree = "<group>"; };
 		A16FFE2B1D1AB25D009D3A89 /* SGLLStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLLStreamer.h; sourceTree = "<group>"; };
@@ -240,6 +260,7 @@
 				182C9D261D0A720F001374DE /* CoreMedia.framework in Frameworks */,
 				182C9D241D0A71FF001374DE /* CoreGraphics.framework in Frameworks */,
 				182C9D221D0A71ED001374DE /* AVFoundation.framework in Frameworks */,
+				A16CD0321D224E52009E0E73 /* opencv2.framework in Frameworks */,
 				182C9D201D0A71E4001374DE /* AudioToolbox.framework in Frameworks */,
 				182C9D1E1D0A71CB001374DE /* libbz2.tbd in Frameworks */,
 				182C9D1C1D0A71AB001374DE /* libz.tbd in Frameworks */,
@@ -332,6 +353,7 @@
 		183819681D09420D00EFB3D0 /* Classe */ = {
 			isa = PBXGroup;
 			children = (
+				A16CD1391D2385B3009E0E73 /* GGChatLib */,
 				A1591EE21D16996200A9BB9C /* category */,
 				18381A251D096DEE00EFB3D0 /* Helpers */,
 				183819751D09424200EFB3D0 /* Controller */,
@@ -380,6 +402,7 @@
 		183819801D094A2400EFB3D0 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				A16CD0311D224E52009E0E73 /* opencv2.framework */,
 				182C9D371D0A9101001374DE /* Accelerate.framework */,
 				182C9D351D0A741D001374DE /* IJKMediaFramework.framework */,
 				182C9D331D0A726E001374DE /* VideoToolbox.framework */,
@@ -556,6 +579,65 @@
 				A16CCC5E1D1FB7AD009E0E73 /* GGLookChatCell.m */,
 			);
 			path = GGLookChatCell;
+			sourceTree = "<group>";
+		};
+		A16CD1391D2385B3009E0E73 /* GGChatLib */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD1AF1D2385B3009E0E73 /* GGChatLib.h */,
+				A16CD1B01D2385B3009E0E73 /* GGChatLib.m */,
+				A16CD1B11D2385B3009E0E73 /* GGHTTPManager */,
+				A16CD1B71D2385B3009E0E73 /* GGSettingVC */,
+			);
+			path = GGChatLib;
+			sourceTree = "<group>";
+		};
+		A16CD1B11D2385B3009E0E73 /* GGHTTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD1B21D2385B3009E0E73 /* GGRegisterFunc */,
+				A16CD2071D2386D0009E0E73 /* GGHTTPManager.h */,
+				A16CD2081D2386D0009E0E73 /* GGHTTPManager.m */,
+			);
+			path = GGHTTPManager;
+			sourceTree = "<group>";
+		};
+		A16CD1B21D2385B3009E0E73 /* GGRegisterFunc */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD1B31D2385B3009E0E73 /* GGRegisterFunc.h */,
+				A16CD1B41D2385B3009E0E73 /* GGRegisterFunc.m */,
+				A16CD1B51D2385B3009E0E73 /* GGRegisterModel.h */,
+				A16CD1B61D2385B3009E0E73 /* GGRegisterModel.m */,
+			);
+			path = GGRegisterFunc;
+			sourceTree = "<group>";
+		};
+		A16CD1B71D2385B3009E0E73 /* GGSettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD1B81D2385B3009E0E73 /* GGRegisterVC */,
+			);
+			path = GGSettingVC;
+			sourceTree = "<group>";
+		};
+		A16CD1B81D2385B3009E0E73 /* GGRegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD1B91D2385B3009E0E73 /* GGRegisterVC.h */,
+				A16CD1BA1D2385B3009E0E73 /* GGRegisterVC.m */,
+				A16CD1BB1D2385B3009E0E73 /* GGRegisterView */,
+			);
+			path = GGRegisterVC;
+			sourceTree = "<group>";
+		};
+		A16CD1BB1D2385B3009E0E73 /* GGRegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD1BC1D2385B3009E0E73 /* GGRegisterView.h */,
+				A16CD1BD1D2385B3009E0E73 /* GGRegisterView.m */,
+			);
+			path = GGRegisterView;
 			sourceTree = "<group>";
 		};
 		A16FFE271D1AABDD009D3A89 /* LookLiveModel */ = {
@@ -821,18 +903,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				18381AA11D096DEE00EFB3D0 /* UIView+WebCacheOperation.m in Sources */,
+				A16CD1FB1D2385B3009E0E73 /* GGChatLib.m in Sources */,
 				A122AB7A1D1D305A00589583 /* LoginVC.m in Sources */,
 				183819721D09420D00EFB3D0 /* ViewModel.m in Sources */,
 				18381AA01D096DEE00EFB3D0 /* UIImageView+WebCache.m in Sources */,
 				183818A71D080ECC00EFB3D0 /* AppDelegate.m in Sources */,
 				A1DAA5BC1D18EDAC0091B90E /* SGMeMainView.m in Sources */,
+				A16CD2091D2386D0009E0E73 /* GGHTTPManager.m in Sources */,
 				18381AA21D096DEE00EFB3D0 /* SVIndefiniteAnimatedView.m in Sources */,
 				18381A931D096DEE00EFB3D0 /* NSData+ImageContentType.m in Sources */,
 				A1591EDA1D16965400A9BB9C /* SGMeVC.m in Sources */,
+				A16CD1FF1D2385B3009E0E73 /* GGRegisterView.m in Sources */,
 				A16CCC5B1D1FB3C8009E0E73 /* GGLookChatView.m in Sources */,
 				A16CCC5F1D1FB7AD009E0E73 /* GGLookChatCell.m in Sources */,
 				18381AA51D096DEE00EFB3D0 /* SVProgressHUD.m in Sources */,
 				183819731D09420D00EFB3D0 /* ViewTableViewCell.m in Sources */,
+				A16CD1FC1D2385B3009E0E73 /* GGRegisterFunc.m in Sources */,
 				18381A9B1D096DEE00EFB3D0 /* UIButton+WebCache.m in Sources */,
 				18381AA31D096DEE00EFB3D0 /* SVPHelper.m in Sources */,
 				A16CCC571D1FA847009E0E73 /* UIViewController+GGUtility.m in Sources */,
@@ -850,7 +936,9 @@
 				A1DAA5C31D18F5B30091B90E /* SGMeHeadView.m in Sources */,
 				183818A41D080ECC00EFB3D0 /* main.m in Sources */,
 				18381A911D096DEE00EFB3D0 /* ODRefreshControl.m in Sources */,
+				A16CD1FE1D2385B3009E0E73 /* GGRegisterVC.m in Sources */,
 				18381A9D1D096DEE00EFB3D0 /* UIImage+MultiFormat.m in Sources */,
+				A16CD1FD1D2385B3009E0E73 /* GGRegisterModel.m in Sources */,
 				18381A981D096DEE00EFB3D0 /* SDWebImageDownloaderOperation.m in Sources */,
 				A1DAA6021D1932E40091B90E /* SGPickerHeadView.m in Sources */,
 				A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */,
@@ -1016,6 +1104,7 @@
 					"$(PROJECT_DIR)/ZombieMovie/Framework",
 					"$(PROJECT_DIR)/ZombieMovie",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZombieMovie/Classe/GGChatLib/Extensions/Vendors/JSPatch",
 				);
 				GCC_PREFIX_HEADER = ZombieMovie/Classe/ZombieMovie.pch;
 				INFOPLIST_FILE = ZombieMovie/Info.plist;
@@ -1044,6 +1133,7 @@
 					"$(PROJECT_DIR)/ZombieMovie/Framework",
 					"$(PROJECT_DIR)/ZombieMovie",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZombieMovie/Classe/GGChatLib/Extensions/Vendors/JSPatch",
 				);
 				GCC_PREFIX_HEADER = ZombieMovie/Classe/ZombieMovie.pch;
 				INFOPLIST_FILE = ZombieMovie/Info.plist;
