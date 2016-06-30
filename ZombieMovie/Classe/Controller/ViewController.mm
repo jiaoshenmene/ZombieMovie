@@ -13,16 +13,17 @@
 #import "SGPerFormingVC.h"
 
 #import "SGMeVC.h"
+#import "GGCommonFriendVC.h"
 
 
 @interface ViewController ()
 
 @property (nonatomic, strong)UITabBarController *tabBarController;
 
-@property (nonatomic, strong)LookLiveVC *llvc;
-@property (nonatomic, strong) SGPerFormingVC *sgpfVC;
+@property (nonatomic , strong) LookLiveVC *llvc;
+@property (nonatomic , strong) SGPerFormingVC *sgpfVC;
 @property (nonatomic , strong) SGMeVC *sgmVC;
-
+@property (nonatomic , strong) GGCommonFriendVC *commonFriendVC;
 
 
 @end
@@ -52,17 +53,20 @@
     _sgmVC = [[SGMeVC alloc] init];
     _sgmVC.title = @"我的";
     
+    _commonFriendVC = [[GGCommonFriendVC alloc] init];
     
+    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:_commonFriendVC];
+    nav4.title = @"friend";
     _tabBarController = [[UITabBarController alloc] init];
     
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:_llvc];
     nav1.title = @"look";
     
-//    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:_sgpfVC];
-//    
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:_sgpfVC];
+//
     UINavigationController *nac3 = [[UINavigationController alloc] initWithRootViewController:_sgmVC];
    
-    NSArray<UIViewController *> *vcs = @[nac3,nav1,_sgpfVC];
+    NSArray<UIViewController *> *vcs = @[nac3,nav4,nav1,nav2];
     
     _tabBarController.viewControllers = vcs;
     

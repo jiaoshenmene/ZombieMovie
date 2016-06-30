@@ -74,6 +74,12 @@
 		A16CD1FE1D2385B3009E0E73 /* GGRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD1BA1D2385B3009E0E73 /* GGRegisterVC.m */; };
 		A16CD1FF1D2385B3009E0E73 /* GGRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD1BD1D2385B3009E0E73 /* GGRegisterView.m */; };
 		A16CD2091D2386D0009E0E73 /* GGHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2081D2386D0009E0E73 /* GGHTTPManager.m */; };
+		A16CD2261D23E44D009E0E73 /* GGLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2221D23E44D009E0E73 /* GGLoginVC.m */; };
+		A16CD2271D23E44D009E0E73 /* GGLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2251D23E44D009E0E73 /* GGLoginView.m */; };
+		A16CD22C1D23E864009E0E73 /* GGCommonFriendView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD22B1D23E864009E0E73 /* GGCommonFriendView.m */; };
+		A16CD22F1D23E873009E0E73 /* GGCommonFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD22E1D23E873009E0E73 /* GGCommonFriendVC.m */; };
+		A16CD2341D23EF0E009E0E73 /* GGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2331D23EF0E009E0E73 /* GGUser.m */; };
+		A16CD2371D23F1A2009E0E73 /* GGCommonFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2361D23F1A2009E0E73 /* GGCommonFriendCell.m */; };
 		A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */; };
 		A16FFE2D1D1AB25D009D3A89 /* SGLLStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE2C1D1AB25D009D3A89 /* SGLLStreamer.m */; };
 		A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1771D581D195F8D00711B6A /* SGCarameVC.m */; };
@@ -219,6 +225,18 @@
 		A16CD1BD1D2385B3009E0E73 /* GGRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGRegisterView.m; sourceTree = "<group>"; };
 		A16CD2071D2386D0009E0E73 /* GGHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGHTTPManager.h; sourceTree = "<group>"; };
 		A16CD2081D2386D0009E0E73 /* GGHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGHTTPManager.m; sourceTree = "<group>"; };
+		A16CD2211D23E44D009E0E73 /* GGLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGLoginVC.h; sourceTree = "<group>"; };
+		A16CD2221D23E44D009E0E73 /* GGLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGLoginVC.m; sourceTree = "<group>"; };
+		A16CD2241D23E44D009E0E73 /* GGLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGLoginView.h; sourceTree = "<group>"; };
+		A16CD2251D23E44D009E0E73 /* GGLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGLoginView.m; sourceTree = "<group>"; };
+		A16CD22A1D23E864009E0E73 /* GGCommonFriendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCommonFriendView.h; sourceTree = "<group>"; };
+		A16CD22B1D23E864009E0E73 /* GGCommonFriendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCommonFriendView.m; sourceTree = "<group>"; };
+		A16CD22D1D23E873009E0E73 /* GGCommonFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCommonFriendVC.h; sourceTree = "<group>"; };
+		A16CD22E1D23E873009E0E73 /* GGCommonFriendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCommonFriendVC.m; sourceTree = "<group>"; };
+		A16CD2321D23EF0E009E0E73 /* GGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGUser.h; sourceTree = "<group>"; };
+		A16CD2331D23EF0E009E0E73 /* GGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGUser.m; sourceTree = "<group>"; };
+		A16CD2351D23F1A2009E0E73 /* GGCommonFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCommonFriendCell.h; sourceTree = "<group>"; };
+		A16CD2361D23F1A2009E0E73 /* GGCommonFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCommonFriendCell.m; sourceTree = "<group>"; };
 		A16FFE281D1AABF0009D3A89 /* SGLookLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLookLiveModel.h; sourceTree = "<group>"; };
 		A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLookLiveModel.m; sourceTree = "<group>"; };
 		A16FFE2B1D1AB25D009D3A89 /* SGLLStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLLStreamer.h; sourceTree = "<group>"; };
@@ -584,6 +602,8 @@
 		A16CD1391D2385B3009E0E73 /* GGChatLib */ = {
 			isa = PBXGroup;
 			children = (
+				A16CD2301D23EED8009E0E73 /* ChatModels */,
+				A16CD2281D23E852009E0E73 /* GGCommonFriendVC */,
 				A16CD1AF1D2385B3009E0E73 /* GGChatLib.h */,
 				A16CD1B01D2385B3009E0E73 /* GGChatLib.m */,
 				A16CD1B11D2385B3009E0E73 /* GGHTTPManager */,
@@ -616,6 +636,7 @@
 		A16CD1B71D2385B3009E0E73 /* GGSettingVC */ = {
 			isa = PBXGroup;
 			children = (
+				A16CD2201D23E44D009E0E73 /* GGLoginVC */,
 				A16CD1B81D2385B3009E0E73 /* GGRegisterVC */,
 			);
 			path = GGSettingVC;
@@ -638,6 +659,63 @@
 				A16CD1BD1D2385B3009E0E73 /* GGRegisterView.m */,
 			);
 			path = GGRegisterView;
+			sourceTree = "<group>";
+		};
+		A16CD2201D23E44D009E0E73 /* GGLoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2211D23E44D009E0E73 /* GGLoginVC.h */,
+				A16CD2221D23E44D009E0E73 /* GGLoginVC.m */,
+				A16CD2231D23E44D009E0E73 /* GGLoginView */,
+			);
+			path = GGLoginVC;
+			sourceTree = "<group>";
+		};
+		A16CD2231D23E44D009E0E73 /* GGLoginView */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2241D23E44D009E0E73 /* GGLoginView.h */,
+				A16CD2251D23E44D009E0E73 /* GGLoginView.m */,
+			);
+			path = GGLoginView;
+			sourceTree = "<group>";
+		};
+		A16CD2281D23E852009E0E73 /* GGCommonFriendVC */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2291D23E852009E0E73 /* GGCommonFriendView */,
+				A16CD22D1D23E873009E0E73 /* GGCommonFriendVC.h */,
+				A16CD22E1D23E873009E0E73 /* GGCommonFriendVC.m */,
+			);
+			path = GGCommonFriendVC;
+			sourceTree = "<group>";
+		};
+		A16CD2291D23E852009E0E73 /* GGCommonFriendView */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD22A1D23E864009E0E73 /* GGCommonFriendView.h */,
+				A16CD22B1D23E864009E0E73 /* GGCommonFriendView.m */,
+				A16CD2351D23F1A2009E0E73 /* GGCommonFriendCell.h */,
+				A16CD2361D23F1A2009E0E73 /* GGCommonFriendCell.m */,
+			);
+			path = GGCommonFriendView;
+			sourceTree = "<group>";
+		};
+		A16CD2301D23EED8009E0E73 /* ChatModels */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2311D23EEF5009E0E73 /* GGUserModel */,
+			);
+			path = ChatModels;
+			sourceTree = "<group>";
+		};
+		A16CD2311D23EEF5009E0E73 /* GGUserModel */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2321D23EF0E009E0E73 /* GGUser.h */,
+				A16CD2331D23EF0E009E0E73 /* GGUser.m */,
+			);
+			path = GGUserModel;
 			sourceTree = "<group>";
 		};
 		A16FFE271D1AABDD009D3A89 /* LookLiveModel */ = {
@@ -907,6 +985,7 @@
 				A122AB7A1D1D305A00589583 /* LoginVC.m in Sources */,
 				183819721D09420D00EFB3D0 /* ViewModel.m in Sources */,
 				18381AA01D096DEE00EFB3D0 /* UIImageView+WebCache.m in Sources */,
+				A16CD22F1D23E873009E0E73 /* GGCommonFriendVC.m in Sources */,
 				183818A71D080ECC00EFB3D0 /* AppDelegate.m in Sources */,
 				A1DAA5BC1D18EDAC0091B90E /* SGMeMainView.m in Sources */,
 				A16CD2091D2386D0009E0E73 /* GGHTTPManager.m in Sources */,
@@ -918,6 +997,7 @@
 				A16CCC5F1D1FB7AD009E0E73 /* GGLookChatCell.m in Sources */,
 				18381AA51D096DEE00EFB3D0 /* SVProgressHUD.m in Sources */,
 				183819731D09420D00EFB3D0 /* ViewTableViewCell.m in Sources */,
+				A16CD2271D23E44D009E0E73 /* GGLoginView.m in Sources */,
 				A16CD1FC1D2385B3009E0E73 /* GGRegisterFunc.m in Sources */,
 				18381A9B1D096DEE00EFB3D0 /* UIButton+WebCache.m in Sources */,
 				18381AA31D096DEE00EFB3D0 /* SVPHelper.m in Sources */,
@@ -927,9 +1007,12 @@
 				A1591EDE1D1696CF00A9BB9C /* SGPerFormingVC.m in Sources */,
 				18381A9F1D096DEE00EFB3D0 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A1DAA6051D19331B0091B90E /* SGPickerHeadVC.m in Sources */,
+				A16CD2261D23E44D009E0E73 /* GGLoginVC.m in Sources */,
+				A16CD2341D23EF0E009E0E73 /* GGUser.m in Sources */,
 				A1591EE11D16995800A9BB9C /* LMLivePreview.m in Sources */,
 				183819781D09424200EFB3D0 /* ViewController.mm in Sources */,
 				18381A991D096DEE00EFB3D0 /* SDWebImageManager.m in Sources */,
+				A16CD2371D23F1A2009E0E73 /* GGCommonFriendCell.m in Sources */,
 				1838197B1D09427D00EFB3D0 /* LiveViewController.m in Sources */,
 				18381A9C1D096DEE00EFB3D0 /* UIImage+GIF.m in Sources */,
 				A1591EE81D16996200A9BB9C /* UIView+YYAdd.m in Sources */,
@@ -950,6 +1033,7 @@
 				A1DAA5CA1D1916D50091B90E /* SGMeFunctionData.m in Sources */,
 				A16FFE2D1D1AB25D009D3A89 /* SGLLStreamer.m in Sources */,
 				A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */,
+				A16CD22C1D23E864009E0E73 /* GGCommonFriendView.m in Sources */,
 				18381A971D096DEE00EFB3D0 /* SDWebImageDownloader.m in Sources */,
 				18381A921D096DEE00EFB3D0 /* MKAnnotationView+WebCache.m in Sources */,
 				A1591DE61D168A3600A9BB9C /* LookLiveVC.m in Sources */,

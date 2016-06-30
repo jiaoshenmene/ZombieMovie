@@ -24,5 +24,16 @@
 
 const static NSString *sg_requestHead = @"http://121.42.201.209:8081";
 
+const static float mOriginX = 10;
+const static float mTop = 100;
+const static float uLabelWidth = 80;
+const static float uLabelHeight = 50;
+const static float ufieldWidth = 150;
+
+const static float mSpaceHeight = 10;
+
+
+const static NSString *GGRequestHeader = @"http://localhost/";
+
 
 #endif /* ZombieMovie_pch */

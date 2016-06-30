@@ -9,6 +9,7 @@
 #import "LoginVC.h"
 #import "SQNetWorkManger.h"
 #import "GGRegisterVC.h"
+#import "GGLoginVC.h"
 
 
 @interface LoginVC()
@@ -17,6 +18,8 @@
 @property (nonatomic , strong) UIButton *registerBtn;
 
 @property (nonatomic , strong) GGRegisterVC *registervc;
+
+@property (nonatomic , strong) GGLoginVC *loginvc;
 @end
 
 @implementation LoginVC
@@ -43,7 +46,7 @@
     [_registerBtn addTarget:self action:@selector(registerMethod) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_registerBtn];
     
-    
+    _loginvc = [[GGLoginVC alloc] init];
     
 }
 
@@ -60,39 +63,43 @@
 
 - (void) loginMethod
 {
-    ASIdentifierManager *identifierManager = [ASIdentifierManager sharedManager];
-    NSUUID *uuid = identifierManager.advertisingIdentifier;
-    
-    NSString *accessToken = uuid.UUIDString;
-
-    NSDictionary *dicjson = @{@"accessToken":accessToken,@"appId":@"shenqi"};
-    NSString *jsonstring = [dicjson yy_modelToJSONString];
-    
-    NSString * URLString = @"http://121.42.201.209:8081/api/users/login";
-    NSURL * URL = [NSURL URLWithString:[URLString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    
-    NSString * postString = jsonstring;//@"theRegionCode=广东";
-    NSData * postData = [postString dataUsingEncoding:NSUTF8StringEncoding];  //将请求参数字符串转成NSData类型
-    NSLog(@"jsonstring = %@",jsonstring);
-
-    
-    
-    NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
-    [request setHTTPMethod:@"post"]; //指定请求方式
-    [request setURL:URL]; //设置请求的地址
-    [request setHTTPBody:postData];  //设置请求的参数
-    
-    NSError * error;
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    
-   [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
-       if (error) {
-           NSLog(@"error : %@",[error localizedDescription]);
-       }else{
-           NSLog(@"response : %@",response);
-           NSLog(@"backData1 : %@",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
-       }
+    [self presentViewController:_loginvc animated:YES completion:^{
+        
     }];
+    
+//    ASIdentifierManager *identifierManager = [ASIdentifierManager sharedManager];
+//    NSUUID *uuid = identifierManager.advertisingIdentifier;
+//    
+//    NSString *accessToken = uuid.UUIDString;
+//
+//    NSDictionary *dicjson = @{@"accessToken":accessToken,@"appId":@"shenqi"};
+//    NSString *jsonstring = [dicjson yy_modelToJSONString];
+//    
+//    NSString * URLString = @"http://121.42.201.209:8081/api/users/login";
+//    NSURL * URL = [NSURL URLWithString:[URLString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+//    
+//    NSString * postString = jsonstring;//@"theRegionCode=广东";
+//    NSData * postData = [postString dataUsingEncoding:NSUTF8StringEncoding];  //将请求参数字符串转成NSData类型
+//    NSLog(@"jsonstring = %@",jsonstring);
+//
+//    
+//    
+//    NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
+//    [request setHTTPMethod:@"post"]; //指定请求方式
+//    [request setURL:URL]; //设置请求的地址
+//    [request setHTTPBody:postData];  //设置请求的参数
+//    
+//    NSError * error;
+//    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+//    
+//   [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+//       if (error) {
+//           NSLog(@"error : %@",[error localizedDescription]);
+//       }else{
+//           NSLog(@"response : %@",response);
+//           NSLog(@"backData1 : %@",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
+//       }
+//    }];
     
     
     
