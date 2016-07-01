@@ -8,11 +8,15 @@
 
 #import "GGCommonFriendView.h"
 #import "GGCommonFriendCell.h"
-
+#import "GGFriendHelper.h"
 
 @interface GGCommonFriendView()<UITableViewDelegate , UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
+
+@property (nonatomic , strong) NSMutableArray *contentData;
+
+@property (nonatomic , strong) GGFriendHelper *friendHelper;
 
 @end
 
@@ -25,13 +29,16 @@
         _tableView.dataSource = self;
         [self addSubview:_tableView];
         
+        _friendHelper = [GGFriendHelper getInstance];
+        _contentData = _friendHelper.data;
+        
     }
     return self;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return _contentData.count;
     
 }
 

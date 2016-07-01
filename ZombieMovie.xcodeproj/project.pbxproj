@@ -80,6 +80,32 @@
 		A16CD22F1D23E873009E0E73 /* GGCommonFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD22E1D23E873009E0E73 /* GGCommonFriendVC.m */; };
 		A16CD2341D23EF0E009E0E73 /* GGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2331D23EF0E009E0E73 /* GGUser.m */; };
 		A16CD2371D23F1A2009E0E73 /* GGCommonFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2361D23F1A2009E0E73 /* GGCommonFriendCell.m */; };
+		A16CD23F1D253BC2009E0E73 /* GGUserDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD23E1D253BC2009E0E73 /* GGUserDetail.m */; };
+		A16CD2421D253C14009E0E73 /* GGUserSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2411D253C14009E0E73 /* GGUserSetting.m */; };
+		A16CD2451D253C44009E0E73 /* GGUserChatSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD2441D253C44009E0E73 /* GGUserChatSetting.m */; };
+		A16CD24B1D253FB0009E0E73 /* GGFriendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD24A1D253FB0009E0E73 /* GGFriendHelper.m */; };
+		A16CD2681D25455D009E0E73 /* FaceEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A16CD24E1D25455D009E0E73 /* FaceEmoji.json */; };
+		A16CD2691D25455D009E0E73 /* SystemEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A16CD24F1D25455D009E0E73 /* SystemEmoji.json */; };
+		A16CD26A1D25455D009E0E73 /* camra_beauty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2511D25455D009E0E73 /* camra_beauty@2x.png */; };
+		A16CD26B1D25455D009E0E73 /* camra_beauty@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2521D25455D009E0E73 /* camra_beauty@3x.png */; };
+		A16CD26C1D25455D009E0E73 /* camra_beauty_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2531D25455D009E0E73 /* camra_beauty_close@2x.png */; };
+		A16CD26D1D25455D009E0E73 /* camra_beauty_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2541D25455D009E0E73 /* camra_beauty_close@3x.png */; };
+		A16CD26E1D25455D009E0E73 /* camra_preview@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2551D25455D009E0E73 /* camra_preview@2x.png */; };
+		A16CD26F1D25455D009E0E73 /* camra_preview@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2561D25455D009E0E73 /* camra_preview@3x.png */; };
+		A16CD2701D25455D009E0E73 /* Chat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2571D25455D009E0E73 /* Chat.xcassets */; };
+		A16CD2711D25455D009E0E73 /* close_preview@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2581D25455D009E0E73 /* close_preview@2x.png */; };
+		A16CD2721D25455D009E0E73 /* close_preview@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2591D25455D009E0E73 /* close_preview@3x.png */; };
+		A16CD2731D25455D009E0E73 /* Common.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CD25A1D25455D009E0E73 /* Common.xcassets */; };
+		A16CD2741D25455D009E0E73 /* Conversation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CD25B1D25455D009E0E73 /* Conversation.xcassets */; };
+		A16CD2751D25455D009E0E73 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CD25C1D25455D009E0E73 /* Discover.xcassets */; };
+		A16CD2761D25455D009E0E73 /* Friends.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CD25D1D25455D009E0E73 /* Friends.xcassets */; };
+		A16CD2771D25455D009E0E73 /* Launch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CD25E1D25455D009E0E73 /* Launch.xcassets */; };
+		A16CD2781D25455D009E0E73 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16CD25F1D25455D009E0E73 /* Mine.xcassets */; };
+		A16CD2791D25455D009E0E73 /* FriendGroupList.json in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2621D25455D009E0E73 /* FriendGroupList.json */; };
+		A16CD27A1D25455D009E0E73 /* FriendList.json in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2631D25455D009E0E73 /* FriendList.json */; };
+		A16CD27B1D25455D009E0E73 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2651D25455D009E0E73 /* main.js */; };
+		A16CD27C1D25455D009E0E73 /* Moments.json in Resources */ = {isa = PBXBuildFile; fileRef = A16CD2671D25455D009E0E73 /* Moments.json */; };
+		A16CD27F1D25459F009E0E73 /* GGUserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CD27E1D25459F009E0E73 /* GGUserGroup.m */; };
 		A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */; };
 		A16FFE2D1D1AB25D009D3A89 /* SGLLStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = A16FFE2C1D1AB25D009D3A89 /* SGLLStreamer.m */; };
 		A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1771D581D195F8D00711B6A /* SGCarameVC.m */; };
@@ -237,6 +263,37 @@
 		A16CD2331D23EF0E009E0E73 /* GGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGUser.m; sourceTree = "<group>"; };
 		A16CD2351D23F1A2009E0E73 /* GGCommonFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCommonFriendCell.h; sourceTree = "<group>"; };
 		A16CD2361D23F1A2009E0E73 /* GGCommonFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCommonFriendCell.m; sourceTree = "<group>"; };
+		A16CD23D1D253BC2009E0E73 /* GGUserDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGUserDetail.h; sourceTree = "<group>"; };
+		A16CD23E1D253BC2009E0E73 /* GGUserDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGUserDetail.m; sourceTree = "<group>"; };
+		A16CD2401D253C14009E0E73 /* GGUserSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGUserSetting.h; sourceTree = "<group>"; };
+		A16CD2411D253C14009E0E73 /* GGUserSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGUserSetting.m; sourceTree = "<group>"; };
+		A16CD2431D253C44009E0E73 /* GGUserChatSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGUserChatSetting.h; sourceTree = "<group>"; };
+		A16CD2441D253C44009E0E73 /* GGUserChatSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGUserChatSetting.m; sourceTree = "<group>"; };
+		A16CD2491D253FB0009E0E73 /* GGFriendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGFriendHelper.h; sourceTree = "<group>"; };
+		A16CD24A1D253FB0009E0E73 /* GGFriendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGFriendHelper.m; sourceTree = "<group>"; };
+		A16CD24E1D25455D009E0E73 /* FaceEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FaceEmoji.json; sourceTree = "<group>"; };
+		A16CD24F1D25455D009E0E73 /* SystemEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SystemEmoji.json; sourceTree = "<group>"; };
+		A16CD2511D25455D009E0E73 /* camra_beauty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camra_beauty@2x.png"; sourceTree = "<group>"; };
+		A16CD2521D25455D009E0E73 /* camra_beauty@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camra_beauty@3x.png"; sourceTree = "<group>"; };
+		A16CD2531D25455D009E0E73 /* camra_beauty_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camra_beauty_close@2x.png"; sourceTree = "<group>"; };
+		A16CD2541D25455D009E0E73 /* camra_beauty_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camra_beauty_close@3x.png"; sourceTree = "<group>"; };
+		A16CD2551D25455D009E0E73 /* camra_preview@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camra_preview@2x.png"; sourceTree = "<group>"; };
+		A16CD2561D25455D009E0E73 /* camra_preview@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camra_preview@3x.png"; sourceTree = "<group>"; };
+		A16CD2571D25455D009E0E73 /* Chat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chat.xcassets; sourceTree = "<group>"; };
+		A16CD2581D25455D009E0E73 /* close_preview@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_preview@2x.png"; sourceTree = "<group>"; };
+		A16CD2591D25455D009E0E73 /* close_preview@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_preview@3x.png"; sourceTree = "<group>"; };
+		A16CD25A1D25455D009E0E73 /* Common.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Common.xcassets; sourceTree = "<group>"; };
+		A16CD25B1D25455D009E0E73 /* Conversation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Conversation.xcassets; sourceTree = "<group>"; };
+		A16CD25C1D25455D009E0E73 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
+		A16CD25D1D25455D009E0E73 /* Friends.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Friends.xcassets; sourceTree = "<group>"; };
+		A16CD25E1D25455D009E0E73 /* Launch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Launch.xcassets; sourceTree = "<group>"; };
+		A16CD25F1D25455D009E0E73 /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
+		A16CD2621D25455D009E0E73 /* FriendGroupList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FriendGroupList.json; sourceTree = "<group>"; };
+		A16CD2631D25455D009E0E73 /* FriendList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FriendList.json; sourceTree = "<group>"; };
+		A16CD2651D25455D009E0E73 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		A16CD2671D25455D009E0E73 /* Moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moments.json; sourceTree = "<group>"; };
+		A16CD27D1D25459F009E0E73 /* GGUserGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGUserGroup.h; sourceTree = "<group>"; };
+		A16CD27E1D25459F009E0E73 /* GGUserGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGUserGroup.m; sourceTree = "<group>"; };
 		A16FFE281D1AABF0009D3A89 /* SGLookLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLookLiveModel.h; sourceTree = "<group>"; };
 		A16FFE291D1AABF0009D3A89 /* SGLookLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGLookLiveModel.m; sourceTree = "<group>"; };
 		A16FFE2B1D1AB25D009D3A89 /* SGLLStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGLLStreamer.h; sourceTree = "<group>"; };
@@ -312,6 +369,7 @@
 				183818BB1D080ECC00EFB3D0 /* ZombieMovieTests */,
 				183818C61D080ECC00EFB3D0 /* ZombieMovieUITests */,
 				183818A01D080ECC00EFB3D0 /* Products */,
+				A16CD24C1D25455D009E0E73 /* Resources */,
 				FE1AA7E7F0BDC8534DDA9092 /* Pods */,
 				DF2ACAF8A233146BD612562C /* Frameworks */,
 			);
@@ -602,6 +660,7 @@
 		A16CD1391D2385B3009E0E73 /* GGChatLib */ = {
 			isa = PBXGroup;
 			children = (
+				A16CD2461D253F2E009E0E73 /* GGBusiness */,
 				A16CD2301D23EED8009E0E73 /* ChatModels */,
 				A16CD2281D23E852009E0E73 /* GGCommonFriendVC */,
 				A16CD1AF1D2385B3009E0E73 /* GGChatLib.h */,
@@ -615,6 +674,7 @@
 		A16CD1B11D2385B3009E0E73 /* GGHTTPManager */ = {
 			isa = PBXGroup;
 			children = (
+				A16CD23A1D253AB9009E0E73 /* GGBase */,
 				A16CD1B21D2385B3009E0E73 /* GGRegisterFunc */,
 				A16CD2071D2386D0009E0E73 /* GGHTTPManager.h */,
 				A16CD2081D2386D0009E0E73 /* GGHTTPManager.m */,
@@ -714,8 +774,125 @@
 			children = (
 				A16CD2321D23EF0E009E0E73 /* GGUser.h */,
 				A16CD2331D23EF0E009E0E73 /* GGUser.m */,
+				A16CD23D1D253BC2009E0E73 /* GGUserDetail.h */,
+				A16CD23E1D253BC2009E0E73 /* GGUserDetail.m */,
+				A16CD2401D253C14009E0E73 /* GGUserSetting.h */,
+				A16CD2411D253C14009E0E73 /* GGUserSetting.m */,
+				A16CD2431D253C44009E0E73 /* GGUserChatSetting.h */,
+				A16CD2441D253C44009E0E73 /* GGUserChatSetting.m */,
+				A16CD27D1D25459F009E0E73 /* GGUserGroup.h */,
+				A16CD27E1D25459F009E0E73 /* GGUserGroup.m */,
 			);
 			path = GGUserModel;
+			sourceTree = "<group>";
+		};
+		A16CD23A1D253AB9009E0E73 /* GGBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GGBase;
+			sourceTree = "<group>";
+		};
+		A16CD2461D253F2E009E0E73 /* GGBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2481D253F79009E0E73 /* GGFriends */,
+				A16CD2471D253F45009E0E73 /* GGCommon */,
+			);
+			path = GGBusiness;
+			sourceTree = "<group>";
+		};
+		A16CD2471D253F45009E0E73 /* GGCommon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GGCommon;
+			sourceTree = "<group>";
+		};
+		A16CD2481D253F79009E0E73 /* GGFriends */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2491D253FB0009E0E73 /* GGFriendHelper.h */,
+				A16CD24A1D253FB0009E0E73 /* GGFriendHelper.m */,
+			);
+			path = GGFriends;
+			sourceTree = "<group>";
+		};
+		A16CD24C1D25455D009E0E73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD24D1D25455D009E0E73 /* DefaultEmoji */,
+				A16CD2501D25455D009E0E73 /* images */,
+				A16CD2601D25455D009E0E73 /* TestData */,
+			);
+			name = Resources;
+			path = ZombieMovie/Resources;
+			sourceTree = "<group>";
+		};
+		A16CD24D1D25455D009E0E73 /* DefaultEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD24E1D25455D009E0E73 /* FaceEmoji.json */,
+				A16CD24F1D25455D009E0E73 /* SystemEmoji.json */,
+			);
+			path = DefaultEmoji;
+			sourceTree = "<group>";
+		};
+		A16CD2501D25455D009E0E73 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2511D25455D009E0E73 /* camra_beauty@2x.png */,
+				A16CD2521D25455D009E0E73 /* camra_beauty@3x.png */,
+				A16CD2531D25455D009E0E73 /* camra_beauty_close@2x.png */,
+				A16CD2541D25455D009E0E73 /* camra_beauty_close@3x.png */,
+				A16CD2551D25455D009E0E73 /* camra_preview@2x.png */,
+				A16CD2561D25455D009E0E73 /* camra_preview@3x.png */,
+				A16CD2571D25455D009E0E73 /* Chat.xcassets */,
+				A16CD2581D25455D009E0E73 /* close_preview@2x.png */,
+				A16CD2591D25455D009E0E73 /* close_preview@3x.png */,
+				A16CD25A1D25455D009E0E73 /* Common.xcassets */,
+				A16CD25B1D25455D009E0E73 /* Conversation.xcassets */,
+				A16CD25C1D25455D009E0E73 /* Discover.xcassets */,
+				A16CD25D1D25455D009E0E73 /* Friends.xcassets */,
+				A16CD25E1D25455D009E0E73 /* Launch.xcassets */,
+				A16CD25F1D25455D009E0E73 /* Mine.xcassets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A16CD2601D25455D009E0E73 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2611D25455D009E0E73 /* Friends */,
+				A16CD2641D25455D009E0E73 /* JSPatch */,
+				A16CD2661D25455D009E0E73 /* Moments */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		A16CD2611D25455D009E0E73 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2621D25455D009E0E73 /* FriendGroupList.json */,
+				A16CD2631D25455D009E0E73 /* FriendList.json */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		A16CD2641D25455D009E0E73 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2651D25455D009E0E73 /* main.js */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
+		A16CD2661D25455D009E0E73 /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				A16CD2671D25455D009E0E73 /* Moments.json */,
+			);
+			path = Moments;
 			sourceTree = "<group>";
 		};
 		A16FFE271D1AABDD009D3A89 /* LookLiveModel */ = {
@@ -904,10 +1081,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16CD2701D25455D009E0E73 /* Chat.xcassets in Resources */,
 				183818B21D080ECC00EFB3D0 /* LaunchScreen.storyboard in Resources */,
+				A16CD2691D25455D009E0E73 /* SystemEmoji.json in Resources */,
 				183818AF1D080ECC00EFB3D0 /* Assets.xcassets in Resources */,
+				A16CD2731D25455D009E0E73 /* Common.xcassets in Resources */,
 				183818AD1D080ECC00EFB3D0 /* Main.storyboard in Resources */,
 				18381AA41D096DEE00EFB3D0 /* SVProgressHUD.bundle in Resources */,
+				A16CD2721D25455D009E0E73 /* close_preview@3x.png in Resources */,
+				A16CD2781D25455D009E0E73 /* Mine.xcassets in Resources */,
+				A16CD2761D25455D009E0E73 /* Friends.xcassets in Resources */,
+				A16CD2751D25455D009E0E73 /* Discover.xcassets in Resources */,
+				A16CD2791D25455D009E0E73 /* FriendGroupList.json in Resources */,
+				A16CD27A1D25455D009E0E73 /* FriendList.json in Resources */,
+				A16CD2771D25455D009E0E73 /* Launch.xcassets in Resources */,
+				A16CD26D1D25455D009E0E73 /* camra_beauty_close@3x.png in Resources */,
+				A16CD27B1D25455D009E0E73 /* main.js in Resources */,
+				A16CD26A1D25455D009E0E73 /* camra_beauty@2x.png in Resources */,
+				A16CD2711D25455D009E0E73 /* close_preview@2x.png in Resources */,
+				A16CD26F1D25455D009E0E73 /* camra_preview@3x.png in Resources */,
+				A16CD27C1D25455D009E0E73 /* Moments.json in Resources */,
+				A16CD2741D25455D009E0E73 /* Conversation.xcassets in Resources */,
+				A16CD26C1D25455D009E0E73 /* camra_beauty_close@2x.png in Resources */,
+				A16CD26B1D25455D009E0E73 /* camra_beauty@3x.png in Resources */,
+				A16CD26E1D25455D009E0E73 /* camra_preview@2x.png in Resources */,
+				A16CD2681D25455D009E0E73 /* FaceEmoji.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,6 +1185,7 @@
 				18381AA01D096DEE00EFB3D0 /* UIImageView+WebCache.m in Sources */,
 				A16CD22F1D23E873009E0E73 /* GGCommonFriendVC.m in Sources */,
 				183818A71D080ECC00EFB3D0 /* AppDelegate.m in Sources */,
+				A16CD23F1D253BC2009E0E73 /* GGUserDetail.m in Sources */,
 				A1DAA5BC1D18EDAC0091B90E /* SGMeMainView.m in Sources */,
 				A16CD2091D2386D0009E0E73 /* GGHTTPManager.m in Sources */,
 				18381AA21D096DEE00EFB3D0 /* SVIndefiniteAnimatedView.m in Sources */,
@@ -1026,12 +1225,16 @@
 				A1DAA6021D1932E40091B90E /* SGPickerHeadView.m in Sources */,
 				A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */,
 				18381A961D096DEE00EFB3D0 /* SDWebImageDecoder.m in Sources */,
+				A16CD2451D253C44009E0E73 /* GGUserChatSetting.m in Sources */,
 				A1591EE71D16996200A9BB9C /* UIControl+YYAdd.m in Sources */,
+				A16CD24B1D253FB0009E0E73 /* GGFriendHelper.m in Sources */,
 				A122AB7E1D1D4B7A00589583 /* SQNetWorkManger.m in Sources */,
+				A16CD2421D253C14009E0E73 /* GGUserSetting.m in Sources */,
 				18381A9E1D096DEE00EFB3D0 /* UIImage+WebP.m in Sources */,
 				18381A951D096DEE00EFB3D0 /* SDWebImageCompat.m in Sources */,
 				A1DAA5CA1D1916D50091B90E /* SGMeFunctionData.m in Sources */,
 				A16FFE2D1D1AB25D009D3A89 /* SGLLStreamer.m in Sources */,
+				A16CD27F1D25459F009E0E73 /* GGUserGroup.m in Sources */,
 				A1771D591D195F8D00711B6A /* SGCarameVC.m in Sources */,
 				A16CD22C1D23E864009E0E73 /* GGCommonFriendView.m in Sources */,
 				18381A971D096DEE00EFB3D0 /* SDWebImageDownloader.m in Sources */,
