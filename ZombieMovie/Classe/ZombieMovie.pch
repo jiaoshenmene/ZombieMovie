@@ -12,6 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import "GGHTTPManager.h"
+
 
 #import "UIColor+DJUtility.h"
 #import "NSString+DJUtility.h"
@@ -19,7 +21,18 @@
 #import "DJCommDef.h"
 #import <AdSupport/AdSupport.h>
 
+#import "UIView+GGUtility.h"
+
 #import "UIViewController+GGUtility.h"
+#import "MASConstraintMaker.h"
+
+#import <MASConstraintMaker.h>
+
+
+#import "View+MASAdditions.h"
+
+
+#import "GGInterface.h"
 
 
 const static NSString *sg_requestHead = @"http://121.42.201.209:8081";
@@ -34,6 +47,25 @@ const static float mSpaceHeight = 10;
 
 
 const static NSString *GGRequestHeader = @"http://localhost/";
+
+
+
+
+
+
+
+#define     BORDER_WIDTH_1PX            ([[UIScreen mainScreen] scale] > 0.0 ? 1.0 / [[UIScreen mainScreen] scale] : 1.0)
+#pragma mark - Methods
+#define     GGURL(urlString)    [NSURL URLWithString:urlString]
+
+
+#define mark - Default
+#define     DEFAULT_AVATAR_PATH    @"default_head"
+
+
+
+#define GGWeakObj(o)  __weak typeof(o) o##Weak = o;
+#define GGStrongObj(o)  __strong typeof(o) o = o##Weak;
 
 
 #endif /* ZombieMovie_pch */

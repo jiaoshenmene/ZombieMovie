@@ -30,15 +30,39 @@
         [self addSubview:_tableView];
         
         _friendHelper = [GGFriendHelper getInstance];
+        [_friendHelper getFriendsList];
+        GGWeakObj(self);
+        
+        _friendHelper.successfulBlock = ^(id object)
+        {
+            GGStrongObj(self);
+            [self.tableView reloadData];
+            
+        };
+        
         _contentData = _friendHelper.data;
+        NSLog(@"%@",_contentData);
         
     }
     return self;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return nil;
+    }
+    return @"A";
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return _contentData.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[_contentData objectAtIndex:section] count];
     
 }
 
@@ -49,6 +73,12 @@
     if (!cell) {
         cell = [[GGCommonFriendCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
+    GGUserGroup *usergroup = [_contentData objectAtIndex:indexPath.section] ;
+    GGUser *user = [usergroup objectAtIndex:indexPath.row];
+    cell.userData = user;
+    
+    
+    
     
     return cell;
     

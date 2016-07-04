@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GGTableViewCell.h"
+#import "GGUser.h"
 
-@interface GGCommonFriendCell : UITableViewCell
+
+@interface GGCommonFriendCell : GGTableViewCell
+
+@property (nonatomic , strong) GGUser *userData;
+
 
 @end

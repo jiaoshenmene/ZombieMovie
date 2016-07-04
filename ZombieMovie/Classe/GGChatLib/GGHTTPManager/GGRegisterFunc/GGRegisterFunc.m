@@ -7,7 +7,7 @@
 //
 
 #import "GGRegisterFunc.h"
-#import "GGHTTPManager.h"
+
 
 
 

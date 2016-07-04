@@ -27,6 +27,10 @@
     return _users;
 }
 
+- (NSInteger) count
+{
+    return self.users.count;
+}
 
 - (void) addObject:(id)anObject
 {
