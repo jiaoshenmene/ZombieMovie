@@ -46,7 +46,10 @@ NSString *testurl = @"http://localhost/studyTest.php";
     }];
     
     
-    
+    EMError *error = [[EMClient sharedClient] registerWithUsername:username password:password];
+    if (error==nil) {
+        NSLog(@"注册成功");
+    }
     
 }
 

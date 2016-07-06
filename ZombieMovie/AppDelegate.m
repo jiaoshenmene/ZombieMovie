@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+
+
 #import "ViewController.h"
 
 @interface AppDelegate ()
@@ -21,8 +23,12 @@
     // Override point for customization after application launch.
     // 更改状态栏颜色
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-//    ViewController *vc = [[ViewController alloc] init];
-//    self.window.rootViewController = vc;
+    //AppKey:注册的AppKey，详细见下面注释。
+    //apnsCertName:推送证书名（不需要加后缀），详细见下面注释。
+    EMOptions *options = [EMOptions optionsWithAppkey:@"gg815319775#dj9775"];
+//    options.apnsCertName = @"istore_dev";
+    [[EMClient sharedClient] initializeSDKWithOptions:options];
+    
        return YES;
 }
 

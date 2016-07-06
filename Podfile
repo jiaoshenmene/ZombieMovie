@@ -25,5 +25,5 @@ pod 'MJRefresh', '~> 3.1.0'
 pod 'BlocksKit', '~> 2.2.5'
 pod 'MWPhotoBrowser', '~> 2.1.1'
 
-
+pod 'HyphenateSDK', :git => 'https://github.com/easemob/hyphenate-cocoapods.git'
 end

@@ -55,17 +55,14 @@
 {
     
     _registervc = [[GGRegisterVC alloc] init];
-    [self presentViewController:_registervc animated:YES completion:^{
-        
-    }];
+
+    [self.navigationController pushViewController:_registervc animated:YES];
     
 }
 
 - (void) loginMethod
 {
-    [self presentViewController:_loginvc animated:YES completion:^{
-        
-    }];
+    [self.navigationController pushViewController:_loginvc animated:YES];
     
 //    ASIdentifierManager *identifierManager = [ASIdentifierManager sharedManager];
 //    NSUUID *uuid = identifierManager.advertisingIdentifier;

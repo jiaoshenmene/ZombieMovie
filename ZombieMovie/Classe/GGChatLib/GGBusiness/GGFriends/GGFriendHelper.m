@@ -38,22 +38,35 @@ static GGFriendHelper *_friendHelper = nil;
         [self testData];
         
         
-        
+
     }
     return self;
 }
 
 - (void)testData
 {
+    
+    EMError *error = nil;
+    NSArray *userlist = [[EMClient sharedClient].contactManager getContactsFromServerWithError:&error];
+    if (!error) {
+        NSLog(@"获取成功 -- %@",userlist);
+    }
+
+    
     GGUserGroup *group = [[GGUserGroup alloc] init];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"FriendList" ofType:@"json"];
-    NSData *jsonData = [NSData dataWithContentsOfFile:path];
-    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
-    [jsonArray enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"FriendList" ofType:@"json"];
+//    NSData *jsonData = [NSData dataWithContentsOfFile:path];
+//    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
+    
+    
+    [userlist enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         GGUser *user = [[GGUser alloc] init];
-        [user yy_modelSetWithJSON:obj];
+//        [user yy_modelSetWithJSON:obj];
+        user.userID = obj;
+        user.remarkName = obj;
+        
         [group.users addObject:user];
     }];
     

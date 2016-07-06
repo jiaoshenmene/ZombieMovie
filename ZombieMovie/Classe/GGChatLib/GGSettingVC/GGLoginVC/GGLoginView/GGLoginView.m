@@ -46,7 +46,7 @@
     
     
     _usernameField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(unameLabel.frame), CGRectGetMinY(unameLabel.frame), ufieldWidth, uLabelHeight)];
-    _usernameField.text = @"zxcvb123";
+    _usernameField.text = @"dujia04";
     [self addSubview:_usernameField];
     
     
@@ -57,7 +57,7 @@
     
     
     _userpasswordField= [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(upasswordLabel.frame), CGRectGetMinY(upasswordLabel.frame), ufieldWidth, uLabelHeight)];
-    _userpasswordField.text = @"0987123";
+    _userpasswordField.text = @"123456";
     [self addSubview:_userpasswordField];
     
 //    UILabel *uconfirmLabel = [[UILabel alloc] initWithFrame:CGRectMake(mOriginX, CGRectGetMaxY(upasswordLabel.frame) + mSpaceHeight, uLabelWidth, uLabelHeight)];

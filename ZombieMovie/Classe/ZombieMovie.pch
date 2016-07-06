@@ -15,11 +15,14 @@
 #import "GGHTTPManager.h"
 
 
+
 #import "UIColor+DJUtility.h"
 #import "NSString+DJUtility.h"
 #import "YYModel.h"
 #import "DJCommDef.h"
 #import <AdSupport/AdSupport.h>
+#import "EMSDK.h"
+
 
 #import "UIView+GGUtility.h"
 

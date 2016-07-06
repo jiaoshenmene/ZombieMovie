@@ -32,15 +32,19 @@ const static NSString *loginURL = @"ggsocialserver/ggresponse/gglogin.php";
 
 - (void) login:(id)sender username:(NSString *)username password:(NSString *)password
 {
-    [[GGHTTPManager getInstance] POST:[NSString stringWithFormat:@"%@%@",GGRequestHeader,loginURL] parameters:@{@"name":username,@"password":password} progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"responseObject = %@",responseObject);
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"error.localizedDescription = %@",error.localizedDescription);
-    }];
+//    [[GGHTTPManager getInstance] POST:[NSString stringWithFormat:@"%@%@",GGRequestHeader,loginURL] parameters:@{@"name":username,@"password":password} progress:^(NSProgress * _Nonnull uploadProgress) {
+//        
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"responseObject = %@",responseObject);
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"error.localizedDescription = %@",error.localizedDescription);
+//    }];
     
-    
+    EMError *error = [[EMClient sharedClient] loginWithUsername:username password:password];
+    if (!error) {
+        [[EMClient sharedClient].options setIsAutoLogin:YES];
+        NSLog(@"登录成功");
+    }
 }
 @end
