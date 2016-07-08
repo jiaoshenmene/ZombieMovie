@@ -7,7 +7,16 @@
 //
 
 
+@protocol GGCommonFriendViewDelegate <NSObject>
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+
+
+@end
+
 
 @interface GGCommonFriendView : UIView
 
+
+@property (nonatomic , weak) id<GGCommonFriendViewDelegate> delegate;
 @end

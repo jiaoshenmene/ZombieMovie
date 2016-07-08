@@ -8,11 +8,11 @@
 
 #import "GGCommonFriendVC.h"
 #import "GGCommonFriendView.h"
+#import "GGMessageVC.h"
 
-
-@interface GGCommonFriendVC()
+@interface GGCommonFriendVC()<GGCommonFriendViewDelegate>
 @property (nonatomic , strong) GGCommonFriendView *commonFriendView;
-
+@property (nonatomic , strong) GGMessageVC *messageVC;
 @end
 
 
@@ -24,12 +24,22 @@
     _commonFriendView = [[GGCommonFriendView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:_commonFriendView];
     
+    
+    _messageVC = [[GGMessageVC alloc] init];
+    
 }
 
 - (NSArray *)getFriendArray
 {
     NSMutableArray *array = [NSMutableArray array];
     return array;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.navigationController pushViewController:_messageVC animated:YES];
+    
 }
 
 @end
