@@ -35,6 +35,9 @@
 		1838197B1D09427D00EFB3D0 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838197A1D09427D00EFB3D0 /* LiveViewController.m */; };
 		18381A911D096DEE00EFB3D0 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18381A531D096DEE00EFB3D0 /* ODRefreshControl.m */; };
 		38B105955CA3FDCB2A42F7F8 /* libPods-ZombieMovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9AAAE704069DEB94F07097E /* libPods-ZombieMovie.a */; };
+		A11E0D611D2F9C3B00E7EA58 /* GGUserProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E0D601D2F9C3B00E7EA58 /* GGUserProfileManager.m */; };
+		A11E0D841D2FA5D400E7EA58 /* EaseChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E0D6F1D2FA5D400E7EA58 /* EaseChineseToPinyin.m */; };
+		A11E0D8E1D2FC57600E7EA58 /* GGMessageBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E0D8D1D2FC57600E7EA58 /* GGMessageBottomView.m */; };
 		A122AB7A1D1D305A00589583 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A122AB791D1D305A00589583 /* LoginVC.m */; };
 		A122AB7E1D1D4B7A00589583 /* SQNetWorkManger.m in Sources */ = {isa = PBXBuildFile; fileRef = A122AB7D1D1D4B7A00589583 /* SQNetWorkManger.m */; };
 		A1591DE61D168A3600A9BB9C /* LookLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591DE51D168A3600A9BB9C /* LookLiveVC.m */; };
@@ -212,6 +215,12 @@
 		1838197A1D09427D00EFB3D0 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
 		18381A521D096DEE00EFB3D0 /* ODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		18381A531D096DEE00EFB3D0 /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
+		A11E0D5F1D2F9C3B00E7EA58 /* GGUserProfileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGUserProfileManager.h; sourceTree = "<group>"; };
+		A11E0D601D2F9C3B00E7EA58 /* GGUserProfileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGUserProfileManager.m; sourceTree = "<group>"; };
+		A11E0D6E1D2FA5D400E7EA58 /* EaseChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseChineseToPinyin.h; sourceTree = "<group>"; };
+		A11E0D6F1D2FA5D400E7EA58 /* EaseChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseChineseToPinyin.m; sourceTree = "<group>"; };
+		A11E0D8C1D2FC57600E7EA58 /* GGMessageBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGMessageBottomView.h; sourceTree = "<group>"; };
+		A11E0D8D1D2FC57600E7EA58 /* GGMessageBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGMessageBottomView.m; sourceTree = "<group>"; };
 		A122AB781D1D305A00589583 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		A122AB791D1D305A00589583 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		A122AB7C1D1D4B7A00589583 /* SQNetWorkManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQNetWorkManger.h; sourceTree = "<group>"; };
@@ -621,6 +630,24 @@
 			path = ODRefreshControl;
 			sourceTree = "<group>";
 		};
+		A11E0D5E1D2F9C1800E7EA58 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A11E0D5F1D2F9C3B00E7EA58 /* GGUserProfileManager.h */,
+				A11E0D601D2F9C3B00E7EA58 /* GGUserProfileManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A11E0D621D2FA5D400E7EA58 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A11E0D6E1D2FA5D400E7EA58 /* EaseChineseToPinyin.h */,
+				A11E0D6F1D2FA5D400E7EA58 /* EaseChineseToPinyin.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A122AB771D1D2E2500589583 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -996,6 +1023,8 @@
 		A17C0DB31D2D254500EEE2F2 /* GGUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A11E0D621D2FA5D400E7EA58 /* Util */,
+				A11E0D5E1D2F9C1800E7EA58 /* CoreData */,
 				A17C104B1D2D2DE400EEE2F2 /* EaseLocalDefine.h */,
 				A17C0FF21D2D2C5900EEE2F2 /* views */,
 				A17C0FB91D2D29F300EEE2F2 /* Model */,
@@ -1172,6 +1201,8 @@
 			children = (
 				A17C10561D2DF3D100EEE2F2 /* GGMessageView.h */,
 				A17C10571D2DF3D100EEE2F2 /* GGMessageView.m */,
+				A11E0D8C1D2FC57600E7EA58 /* GGMessageBottomView.h */,
+				A11E0D8D1D2FC57600E7EA58 /* GGMessageBottomView.m */,
 			);
 			path = GGMessageViews;
 			sourceTree = "<group>";
@@ -1547,10 +1578,12 @@
 				A16CD1FB1D2385B3009E0E73 /* GGChatLib.m in Sources */,
 				A122AB7A1D1D305A00589583 /* LoginVC.m in Sources */,
 				183819721D09420D00EFB3D0 /* ViewModel.m in Sources */,
+				A11E0D8E1D2FC57600E7EA58 /* GGMessageBottomView.m in Sources */,
 				A16CD22F1D23E873009E0E73 /* GGCommonFriendVC.m in Sources */,
 				183818A71D080ECC00EFB3D0 /* AppDelegate.m in Sources */,
 				A16CD23F1D253BC2009E0E73 /* GGUserDetail.m in Sources */,
 				A1DAA5BC1D18EDAC0091B90E /* SGMeMainView.m in Sources */,
+				A11E0D841D2FA5D400E7EA58 /* EaseChineseToPinyin.m in Sources */,
 				A16CD2091D2386D0009E0E73 /* GGHTTPManager.m in Sources */,
 				A17C10181D2D2D2700EEE2F2 /* EaseMessageTimeCell.m in Sources */,
 				A1591EDA1D16965400A9BB9C /* SGMeVC.m in Sources */,
@@ -1586,6 +1619,7 @@
 				A17C0FC51D2D29F300EEE2F2 /* EaseConversationModel.m in Sources */,
 				A1591EE81D16996200A9BB9C /* UIView+YYAdd.m in Sources */,
 				A17C10091D2D2C8600EEE2F2 /* EaseBubbleView+Text.m in Sources */,
+				A11E0D611D2F9C3B00E7EA58 /* GGUserProfileManager.m in Sources */,
 				A17C0FC61D2D29F300EEE2F2 /* EaseMessageModel.m in Sources */,
 				A17C10461D2D2D6500EEE2F2 /* UIImage+EMMultiFormat.m in Sources */,
 				A17C0FC71D2D29F300EEE2F2 /* EaseUserModel.m in Sources */,

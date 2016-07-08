@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol GGMessageViewDelegate <NSObject>
+- (void) sendMethod:(id)sender;
+
+
+@end
+
 @interface GGMessageView : UIView
 
-
+@property (nonatomic , weak) id<GGMessageViewDelegate> delegate;
 @end

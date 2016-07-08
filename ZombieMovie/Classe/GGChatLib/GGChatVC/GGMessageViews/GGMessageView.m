@@ -7,9 +7,14 @@
 //
 
 #import "GGMessageView.h"
+#import "GGMessageBottomView.h"
 
-@interface GGMessageView()<UITableViewDelegate , UITableViewDataSource>
+size_t const bottomViewHeight = 50;
+
+@interface GGMessageView()<UITableViewDelegate , UITableViewDataSource , GGMessageBottomViewDelegate>
 @property (nonatomic , strong) UITableView *tableView;
+
+@property (nonatomic , strong) GGMessageBottomView *bottomView;
 @end
 
 
@@ -18,10 +23,14 @@
 - (id) initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        _tableView = [[UITableView alloc] initWithFrame:self.bounds style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame) - bottomViewHeight) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [self addSubview:_tableView];
+        
+        _bottomView = [[GGMessageBottomView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_tableView.frame), CGRectGetWidth(frame), bottomViewHeight)];
+        _bottomView.delegate = self;
+        [self addSubview:_bottomView];
         
     }
     return self;
@@ -30,9 +39,6 @@
 {
     return 1;
 }
-
-// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -47,7 +53,12 @@
     
 }
 
-
+- (void) sendMethod:(id)sender
+{
+    if ([_delegate respondsToSelector:@selector(sendMethod:)]) {
+        [_delegate sendMethod:sender];
+    }
+}
 
 
 

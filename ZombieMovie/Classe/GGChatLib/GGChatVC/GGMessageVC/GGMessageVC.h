@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface GGMessageVC : UIViewController
-
+- (instancetype)initWithConversationChatter:(NSString *)conversationChatter
+                           conversationType:(EMConversationType)conversationType;
 @end
