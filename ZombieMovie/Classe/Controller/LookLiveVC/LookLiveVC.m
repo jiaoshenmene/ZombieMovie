@@ -63,6 +63,8 @@
     
     [self frontView];
     
+    SGLookLiveModel *model = [[SGLookLiveModel alloc] init];
+    [self.dataArray addObject:model];
     
     [self newData];
 

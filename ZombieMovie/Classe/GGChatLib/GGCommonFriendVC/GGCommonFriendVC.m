@@ -12,7 +12,7 @@
 
 #import "EaseUserModel.h"
 
-#import "GGUserProfileManager.h"
+//#import "GGUserProfileManager.h"
 #import "EaseChineseToPinyin.h"
 
 @interface GGCommonFriendVC()<GGCommonFriendViewDelegate>
@@ -70,6 +70,7 @@
     
     GGMessageVC *messagevc = [[GGMessageVC alloc] initWithConversationChatter:user.userID conversationType:EMConversationTypeChat];
     messagevc.hidesBottomBarWhenPushed = YES;
+//    self.navigationController.navigationBar.hidden = YES;
     [self.navigationController pushViewController:messagevc animated:YES];
     
 }
@@ -111,12 +112,12 @@
     [contactsSource enumerateObjectsUsingBlock:^(NSString * _Nonnull buddy, NSUInteger idx, BOOL * _Nonnull stop) {
         EaseUserModel *model = [[EaseUserModel alloc] initWithBuddy:buddy];
         
-        NSString *firstLetter = [EaseChineseToPinyin pinyinFromChineseString:[[GGUserProfileManager sharedInstance] getNickNameWithUsername:buddy]];
-        
-        NSInteger section = [indexCollation sectionForObject:[firstLetter substringToIndex:1] collationStringSelector:@selector(uppercaseString)];
-        
-        NSMutableArray *array = [sortedArray objectAtIndex:section];
-        [array addObject:model];
+//        NSString *firstLetter = [EaseChineseToPinyin pinyinFromChineseString:[[GGUserProfileManager sharedInstance] getNickNameWithUsername:buddy]];
+//        
+//        NSInteger section = [indexCollation sectionForObject:[firstLetter substringToIndex:1] collationStringSelector:@selector(uppercaseString)];
+//        
+//        NSMutableArray *array = [sortedArray objectAtIndex:section];
+//        [array addObject:model];
         
     }];
     

@@ -58,7 +58,9 @@ static NSString *cellSetting = @"cellSetting";
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [[_contentArray objectAtIndex:indexPath.row] cellHeight];
+    
+    SGMeData *data = [_contentArray objectAtIndex:indexPath.row];
+    return [data cellHeight];
 }
 
 

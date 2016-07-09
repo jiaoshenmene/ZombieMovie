@@ -22,7 +22,7 @@
 #import "DJCommDef.h"
 #import <AdSupport/AdSupport.h>
 #import "EMSDK.h"
-
+#import "EaseUI.h"
 
 #import "UIView+GGUtility.h"
 
@@ -36,6 +36,9 @@
 
 
 #import "GGInterface.h"
+#import "EMAlertView.h"
+
+#import "SRRefreshView.h"
 
 
 const static NSString *sg_requestHead = @"http://121.42.201.209:8081";
