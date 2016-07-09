@@ -18,4 +18,5 @@
 
 @interface GGMessageBottomView : UIView
 @property (nonatomic , weak) id<GGMessageBottomViewDelegate> delegate;
+@property (nonatomic , strong) UITextField *inputTextField;
 @end

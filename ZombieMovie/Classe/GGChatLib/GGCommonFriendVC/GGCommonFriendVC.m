@@ -66,8 +66,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    _messageVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:_messageVC animated:YES];
+    GGUser *user = [[_commonFriendView.contentData objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    
+    GGMessageVC *messagevc = [[GGMessageVC alloc] initWithConversationChatter:user.userID conversationType:EMConversationTypeChat];
+    messagevc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:messagevc animated:YES];
     
 }
 

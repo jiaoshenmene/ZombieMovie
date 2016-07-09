@@ -9,10 +9,11 @@
 #import "GGMessageVC.h"
 #import "GGMessageView.h"
 
+#import "IMessageModel.h"
 
 
 
-@interface GGMessageVC()<GGMessageViewDelegate>
+@interface GGMessageVC()<GGMessageViewDelegate,EMClientDelegate,EMChatManagerDelegate>
 @property (nonatomic , strong) GGMessageView *messageView;
 
 
@@ -61,6 +62,10 @@
     _messageView.delegate = self;
     [self.view addSubview:_messageView];
     
+    
+    [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
+    
+    
   
     
 }
@@ -72,6 +77,7 @@
 {
     [super viewWillDisappear:animated];
     [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+    [[EMClient sharedClient].chatManager removeDelegate:self];
 }
 
 
@@ -80,20 +86,77 @@
 
 - (void) sendMethod:(id)sender
 {
-    EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:@"要发送的消息"];
+    EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:[_messageView getsendMessageText]];
     NSString *from = [[EMClient sharedClient] currentUsername];
     
-    NSString *to = @"dujia10";
+    [_messageView clearMesText];
     //生成Message
-    EMMessage *message = [[EMMessage alloc] initWithConversationID:to
+    EMMessage *message = [[EMMessage alloc] initWithConversationID:_conversation.conversationId
                                                               from:from
-                                                                to:to
+                                                                to:_conversation.conversationId
                                                               body:body ext:nil];
-    NSLog(@"from = %@ , self.conversation.conversationId = %@",from,to);
     message.chatType = EMChatTypeChat;// 设置为单聊消息
     [[EMClient sharedClient].chatManager asyncSendMessage:message progress:nil completion:^(EMMessage *message, EMError *error) {
         NSLog(@"yes");
     }];
-   
 }
+
+#pragma mark - EMChatManagerDelegate
+
+- (void)didUpdateConversationList:(NSArray *)aConversationList
+{
+    NSLog(@"didUpdateConversationList = %@",aConversationList);
+}
+
+- (void)didReceiveMessages:(NSArray<EMMessage *> *)aMessages
+{
+    NSLog(@"didReceiveMessages = %@",aMessages);
+    [aMessages enumerateObjectsUsingBlock:^(EMMessage * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+         EMMessage *msg = obj;
+        NSLog(@"messageId = %@",msg.messageId);
+        
+        NSLog(@"conversationId = %@",msg.conversationId);
+        
+        NSLog(@"status = %d",msg.status);
+        
+        EMTextMessageBody* model =(EMTextMessageBody *) obj.body;
+        
+        NSLog(@"%@",model.text);
+    }];
+}
+
+
+- (void)didReceiveCmdMessages:(NSArray *)aCmdMessages
+{
+    NSLog(@"didReceiveCmdMessages = %@",aCmdMessages);
+}
+
+- (void)didReceiveHasReadAcks:(NSArray<EMMessage *> *)aMessages
+{
+    NSLog(@"didReceiveHasReadAcks = %@",aMessages);
+    [aMessages enumerateObjectsUsingBlock:^(EMMessage * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        EMMessage *msg = obj;
+        NSLog(@"messageId = %@",msg.messageId);
+        
+        NSLog(@"conversationId = %@",msg.conversationId);
+        
+        NSLog(@"status = %d",msg.status);
+        
+        
+    }];
+}
+
+
+- (void)didMessageStatusChanged:(EMMessage *)aMessage
+                          error:(EMError *)aError
+{
+    NSLog(@"didMessageStatusChanged = %@",aMessage);
+}
+
+- (void)didMessageAttachmentsStatusChanged:(EMMessage *)aMessage
+                                     error:(EMError *)aError
+{
+    NSLog(@"didMessageAttachmentsStatusChanged = %@",aMessage);
+}
+
 @end

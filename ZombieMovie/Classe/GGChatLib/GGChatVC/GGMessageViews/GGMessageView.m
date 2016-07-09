@@ -60,6 +60,14 @@ size_t const bottomViewHeight = 50;
     }
 }
 
+- (NSString *)getsendMessageText
+{
+    return _bottomView.inputTextField.text;
+}
 
+- (void) clearMesText
+{
+    _bottomView.inputTextField.text = @"";
+}
 
 @end

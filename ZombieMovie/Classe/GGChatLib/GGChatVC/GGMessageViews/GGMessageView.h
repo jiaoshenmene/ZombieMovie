@@ -17,4 +17,9 @@
 @interface GGMessageView : UIView
 
 @property (nonatomic , weak) id<GGMessageViewDelegate> delegate;
+
+- (NSString *)getsendMessageText;
+
+- (void) clearMesText;
+
 @end

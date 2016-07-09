@@ -12,8 +12,8 @@
 
 #import "EaseMessageModel.h"
 
-//#import "EaseEmotionEscape.h"
-//#import "EaseConvertToCommonEmoticonsHelper.h"
+#import "EaseEmotionEscape.h"
+#import "EaseConvertToCommonEmoticonsHelper.h"
 
 @implementation EaseMessageModel
 
@@ -34,8 +34,8 @@
             {
                 EMTextMessageBody *textBody = (EMTextMessageBody *)_firstMessageBody;
                 // 表情映射。
-//                NSString *didReceiveText = [EaseConvertToCommonEmoticonsHelper convertToSystemEmoticons:textBody.text];
-//                self.text = didReceiveText;
+                NSString *didReceiveText = [EaseConvertToCommonEmoticonsHelper convertToSystemEmoticons:textBody.text];
+                self.text = didReceiveText;
             }
                 break;
             case EMMessageBodyTypeImage:

@@ -8,13 +8,13 @@
 
 #import "GGCommonFriendView.h"
 #import "GGCommonFriendCell.h"
-#import "GGFriendHelper.h"
+
 
 @interface GGCommonFriendView()<UITableViewDelegate , UITableViewDataSource>
 
 @property (nonatomic , strong) UITableView *tableView;
 
-@property (nonatomic , strong) NSMutableArray *contentData;
+
 
 @property (nonatomic , strong) GGFriendHelper *friendHelper;
 

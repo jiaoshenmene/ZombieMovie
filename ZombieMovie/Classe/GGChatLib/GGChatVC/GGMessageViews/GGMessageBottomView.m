@@ -12,7 +12,7 @@
 size_t const btnwidth = 50;
 
 @interface GGMessageBottomView()
-@property (nonatomic , strong) UITextField *inputTextField;
+
 @property (nonatomic , strong) UIButton *sendBtn;
 
 @end
