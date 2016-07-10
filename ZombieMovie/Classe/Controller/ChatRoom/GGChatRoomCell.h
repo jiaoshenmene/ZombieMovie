@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GGChatRoomModel.h"
 
 @interface GGChatRoomCell : UITableViewCell
 
+@property (nonatomic , strong) GGChatRoomModel *message;
 @end

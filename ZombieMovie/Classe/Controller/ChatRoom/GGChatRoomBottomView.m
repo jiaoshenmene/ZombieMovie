@@ -10,8 +10,14 @@
 
 size_t const btnroomwidth = 50;
 
+size_t const space_x = 5;
+
+
 @interface GGChatRoomBottomView()
 @property (nonatomic , strong) UIButton *sendBtn;
+
+@property (nonatomic , strong) UIButton *inputBtn;
+
 @end
 
 
@@ -19,30 +25,30 @@ size_t const btnroomwidth = 50;
 - (instancetype) initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        _inputTextField = [[UITextField alloc] initWithFrame:CGRectMake(30, 0, frame.size.width - 30 - btnroomwidth, CGRectGetHeight(frame))];
-        _inputTextField.borderStyle = UITextBorderStyleRoundedRect;
-        [self addSubview:_inputTextField];
+//
         
-        _sendBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [_sendBtn setTitle:@"send" forState:UIControlStateNormal];
-        [_sendBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_sendBtn addTarget:self action:@selector(sendMethod:) forControlEvents:UIControlEventTouchUpInside];
-        _sendBtn.frame = CGRectMake(CGRectGetMaxX(_inputTextField.frame), 0, btnroomwidth, CGRectGetHeight(frame));
-        [self addSubview:_sendBtn];
+        _inputBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//        [_inputBtn setTitle:@"send" forState:UIControlStateNormal];
+        [_inputBtn setImage:[UIImage imageNamed:@"2.0_me_other_xin_"] forState:UIControlStateNormal];
+        
+        [_inputBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_inputBtn addTarget:self action:@selector(showInputView:) forControlEvents:UIControlEventTouchUpInside];
+        _inputBtn.frame = CGRectMake(space_x, 0, btnroomwidth, CGRectGetHeight(frame));
+        [self addSubview:_inputBtn];
+
         
     }
     return self;
 }
 
-- (void) sendMethod:(id)sender
+
+
+- (void) showInputView:(UIButton *)sender
 {
-    if ([_delegate respondsToSelector:@selector(sendMethod:)]) {
-        [_delegate sendMethod:sender];
+    if ([_delegate respondsToSelector:@selector(showInputView:)]) {
+        [_delegate showInputView:sender];
     }
     
-    if (_sendMethod) {
-        _sendMethod(sender);
-    }
 }
 
 

@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol GGChatRoomViewDelegate <NSObject>
+
+- (void) showInputView:(UIButton *)sender;
+
+@end
+
 @interface GGChatRoomView : UIView
+
+@property (nonatomic , strong) id<GGChatRoomViewDelegate> delegate;
 - (void)removeDelegate;
 
 

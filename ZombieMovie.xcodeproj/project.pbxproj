@@ -164,6 +164,12 @@
 		A11E12781D31086D00E7EA58 /* GGChatRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E12771D31086D00E7EA58 /* GGChatRoomView.m */; };
 		A11E127B1D320A8F00E7EA58 /* GGChatRoomBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E127A1D320A8F00E7EA58 /* GGChatRoomBottomView.m */; };
 		A11E127E1D321EA800E7EA58 /* GGChatRoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E127D1D321EA800E7EA58 /* GGChatRoomCell.m */; };
+		A11E12821D322B0F00E7EA58 /* GGChatRoomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E12811D322B0F00E7EA58 /* GGChatRoomModel.m */; };
+		A11E12851D322C9100E7EA58 /* NSString+GGUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E12841D322C9100E7EA58 /* NSString+GGUtility.m */; };
+		A11E12881D323BAE00E7EA58 /* GGCRSupernatantView.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E12871D323BAE00E7EA58 /* GGCRSupernatantView.m */; };
+		A11E128B1D323CA500E7EA58 /* GGCRInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E128A1D323CA500E7EA58 /* GGCRInputView.m */; };
+		A11E128F1D32498700E7EA58 /* 2.0_me_other_xin_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A11E128D1D32498700E7EA58 /* 2.0_me_other_xin_@2x.png */; };
+		A11E12901D32498700E7EA58 /* 2.0_me_other_xin_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A11E128E1D32498700E7EA58 /* 2.0_me_other_xin_@3x.png */; };
 		A122AB7A1D1D305A00589583 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A122AB791D1D305A00589583 /* LoginVC.m */; };
 		A122AB7E1D1D4B7A00589583 /* SQNetWorkManger.m in Sources */ = {isa = PBXBuildFile; fileRef = A122AB7D1D1D4B7A00589583 /* SQNetWorkManger.m */; };
 		A1591DE61D168A3600A9BB9C /* LookLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591DE51D168A3600A9BB9C /* LookLiveVC.m */; };
@@ -579,6 +585,16 @@
 		A11E127A1D320A8F00E7EA58 /* GGChatRoomBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGChatRoomBottomView.m; sourceTree = "<group>"; };
 		A11E127C1D321EA800E7EA58 /* GGChatRoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGChatRoomCell.h; sourceTree = "<group>"; };
 		A11E127D1D321EA800E7EA58 /* GGChatRoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGChatRoomCell.m; sourceTree = "<group>"; };
+		A11E12801D322B0F00E7EA58 /* GGChatRoomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGChatRoomModel.h; sourceTree = "<group>"; };
+		A11E12811D322B0F00E7EA58 /* GGChatRoomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGChatRoomModel.m; sourceTree = "<group>"; };
+		A11E12831D322C9100E7EA58 /* NSString+GGUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GGUtility.h"; sourceTree = "<group>"; };
+		A11E12841D322C9100E7EA58 /* NSString+GGUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GGUtility.m"; sourceTree = "<group>"; };
+		A11E12861D323BAE00E7EA58 /* GGCRSupernatantView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCRSupernatantView.h; sourceTree = "<group>"; };
+		A11E12871D323BAE00E7EA58 /* GGCRSupernatantView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCRSupernatantView.m; sourceTree = "<group>"; };
+		A11E12891D323CA500E7EA58 /* GGCRInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCRInputView.h; sourceTree = "<group>"; };
+		A11E128A1D323CA500E7EA58 /* GGCRInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCRInputView.m; sourceTree = "<group>"; };
+		A11E128D1D32498700E7EA58 /* 2.0_me_other_xin_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2.0_me_other_xin_@2x.png"; sourceTree = "<group>"; };
+		A11E128E1D32498700E7EA58 /* 2.0_me_other_xin_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2.0_me_other_xin_@3x.png"; sourceTree = "<group>"; };
 		A122AB781D1D305A00589583 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		A122AB791D1D305A00589583 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		A122AB7C1D1D4B7A00589583 /* SQNetWorkManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQNetWorkManger.h; sourceTree = "<group>"; };
@@ -1513,14 +1529,37 @@
 		A11E12751D31084E00E7EA58 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
+				A11E127F1D322AFD00E7EA58 /* ChatRoomModel */,
 				A11E12761D31086D00E7EA58 /* GGChatRoomView.h */,
 				A11E12771D31086D00E7EA58 /* GGChatRoomView.m */,
+				A11E12861D323BAE00E7EA58 /* GGCRSupernatantView.h */,
+				A11E12871D323BAE00E7EA58 /* GGCRSupernatantView.m */,
 				A11E12791D320A8F00E7EA58 /* GGChatRoomBottomView.h */,
 				A11E127A1D320A8F00E7EA58 /* GGChatRoomBottomView.m */,
+				A11E12891D323CA500E7EA58 /* GGCRInputView.h */,
+				A11E128A1D323CA500E7EA58 /* GGCRInputView.m */,
 				A11E127C1D321EA800E7EA58 /* GGChatRoomCell.h */,
 				A11E127D1D321EA800E7EA58 /* GGChatRoomCell.m */,
 			);
 			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		A11E127F1D322AFD00E7EA58 /* ChatRoomModel */ = {
+			isa = PBXGroup;
+			children = (
+				A11E12801D322B0F00E7EA58 /* GGChatRoomModel.h */,
+				A11E12811D322B0F00E7EA58 /* GGChatRoomModel.m */,
+			);
+			path = ChatRoomModel;
+			sourceTree = "<group>";
+		};
+		A11E128C1D32498700E7EA58 /* inke */ = {
+			isa = PBXGroup;
+			children = (
+				A11E128D1D32498700E7EA58 /* 2.0_me_other_xin_@2x.png */,
+				A11E128E1D32498700E7EA58 /* 2.0_me_other_xin_@3x.png */,
+			);
+			path = inke;
 			sourceTree = "<group>";
 		};
 		A122AB771D1D2E2500589583 /* LoginVC */ = {
@@ -1590,6 +1629,8 @@
 				A11E11C81D30CB2000E7EA58 /* UIResponder+Router.m */,
 				A11E11C91D30CB2000E7EA58 /* UIViewController+HUD.h */,
 				A11E11CA1D30CB2000E7EA58 /* UIViewController+HUD.m */,
+				A11E12831D322C9100E7EA58 /* NSString+GGUtility.h */,
+				A11E12841D322C9100E7EA58 /* NSString+GGUtility.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -1773,6 +1814,7 @@
 		A16CD24C1D25455D009E0E73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A11E128C1D32498700E7EA58 /* inke */,
 				A16CD24D1D25455D009E0E73 /* DefaultEmoji */,
 				A16CD2501D25455D009E0E73 /* images */,
 				A16CD2601D25455D009E0E73 /* TestData */,
@@ -2228,6 +2270,7 @@
 				183818AF1D080ECC00EFB3D0 /* Assets.xcassets in Resources */,
 				A19DF29A1D29015600A5D376 /* Discover.xcassets in Resources */,
 				A19DF2951D29015600A5D376 /* Chat.xcassets in Resources */,
+				A11E128F1D32498700E7EA58 /* 2.0_me_other_xin_@2x.png in Resources */,
 				A19DF2931D29015600A5D376 /* camra_preview@2x.png in Resources */,
 				A16CD2731D25455D009E0E73 /* Common.xcassets in Resources */,
 				A19DF2A11D29015600A5D376 /* Moments.json in Resources */,
@@ -2240,6 +2283,7 @@
 				A19DF2961D29015600A5D376 /* close_preview@2x.png in Resources */,
 				A16CD2751D25455D009E0E73 /* Discover.xcassets in Resources */,
 				A19DF29D1D29015600A5D376 /* Mine.xcassets in Resources */,
+				A11E12901D32498700E7EA58 /* 2.0_me_other_xin_@3x.png in Resources */,
 				A16CD2791D25455D009E0E73 /* FriendGroupList.json in Resources */,
 				A16CD27A1D25455D009E0E73 /* FriendList.json in Resources */,
 				A16CD2771D25455D009E0E73 /* Launch.xcassets in Resources */,
@@ -2378,6 +2422,7 @@
 				A11E12471D30D5F800E7EA58 /* SettingsViewController.m in Sources */,
 				A11E12461D30D5F800E7EA58 /* PushNotificationViewController.m in Sources */,
 				A11E0FE21D30C86200E7EA58 /* UIButton+EMWebCache.m in Sources */,
+				A11E12821D322B0F00E7EA58 /* GGChatRoomModel.m in Sources */,
 				A11E0FAC1D30C80F00E7EA58 /* EaseBubbleView.m in Sources */,
 				A11E0FA41D30C80F00E7EA58 /* EaseMessageTimeCell.m in Sources */,
 				A11E11D41D30CB7200E7EA58 /* UserProfileManager.m in Sources */,
@@ -2464,6 +2509,7 @@
 				A11E12321D30D5F800E7EA58 /* ChatroomDetailViewController.m in Sources */,
 				A11E122B1D30D5F800E7EA58 /* GroupListViewController.m in Sources */,
 				A16FFE2A1D1AABF0009D3A89 /* SGLookLiveModel.m in Sources */,
+				A11E12851D322C9100E7EA58 /* NSString+GGUtility.m in Sources */,
 				A11E12661D30D63A00E7EA58 /* XHMessageTextView.m in Sources */,
 				A11E12731D30D8C900E7EA58 /* EMAlertView.m in Sources */,
 				A11E0F8D1D30C80F00E7EA58 /* NSDate+Category.m in Sources */,
@@ -2472,6 +2518,7 @@
 				A11E11CD1D30CB2000E7EA58 /* UIViewController+HUD.m in Sources */,
 				A16CD2451D253C44009E0E73 /* GGUserChatSetting.m in Sources */,
 				A1591EE71D16996200A9BB9C /* UIControl+YYAdd.m in Sources */,
+				A11E128B1D323CA500E7EA58 /* GGCRInputView.m in Sources */,
 				A16CD24B1D253FB0009E0E73 /* GGFriendHelper.m in Sources */,
 				A11E0F8B1D30C80F00E7EA58 /* EaseMessageModel.m in Sources */,
 				A11E0F8A1D30C80F00E7EA58 /* EaseConversationModel.m in Sources */,
@@ -2503,6 +2550,7 @@
 				A11E0FAF1D30C80F00E7EA58 /* EaseImageView.m in Sources */,
 				A11E0F441D30C80E00E7EA58 /* EMCDDeviceManager+Microphone.m in Sources */,
 				A11E12351D30D5F800E7EA58 /* ContactListSelectViewController.m in Sources */,
+				A11E12881D323BAE00E7EA58 /* GGCRSupernatantView.m in Sources */,
 				A11E0FA01D30C80F00E7EA58 /* EaseUserCell.m in Sources */,
 				A11E12611D30D63A00E7EA58 /* EMRemarkImageView.m in Sources */,
 				A11E12401D30D5F800E7EA58 /* RobotListViewController.m in Sources */,

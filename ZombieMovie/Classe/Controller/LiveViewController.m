@@ -13,7 +13,7 @@
 #import <Accelerate/Accelerate.h>
 #import "SQNetWorkManger.h"
 
-#import "GGChatRoomView.h"
+#import "GGCRSupernatantView.h"
 
 
 
@@ -28,13 +28,12 @@
 
 @property (nonatomic, strong) UIImageView *dimIamge;
 
-@property (nonatomic, strong) GGChatRoomView *chatRoomView;
+@property (nonatomic, strong) GGCRSupernatantView *supernatiantView;
 @end
 
 @implementation LiveViewController
 
-CGFloat const crviewheight = 250;
-CGFloat const crviewrightGap = 100;
+
 
 
 
@@ -62,11 +61,11 @@ CGFloat const crviewrightGap = 100;
     [self loadingView];
     [self changeBackBtn];
     
+
+    _supernatiantView = [[GGCRSupernatantView alloc] initWithFrame:self.view.bounds];
     
-    _chatRoomView = [[GGChatRoomView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame) - crviewheight, CGRectGetWidth(self.view.frame) - crviewrightGap, crviewheight)];
     
-    
-    [self.view addSubview:_chatRoomView];
+    [self.view addSubview:_supernatiantView];
     
     // Do any additional setup after loading the view.
 }

@@ -10,18 +10,22 @@
 
 @protocol GGChatRoomBottomViewDelegate <NSObject>
 
-- (void) sendMethod:(id)sender;
+
+
+- (void) showInputView:(UIButton *)sender;
+
+@optional
+
+
 
 @end
 
 
-typedef void(^SendMethod)(id sender);
+
+
+
 
 
 @interface GGChatRoomBottomView : UIView
 @property (nonatomic , weak) id<GGChatRoomBottomViewDelegate> delegate;
-@property (nonatomic , strong) UITextField *inputTextField;
-
-@property (nonatomic , copy) SendMethod sendMethod;
-
 @end

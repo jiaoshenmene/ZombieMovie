@@ -18,4 +18,9 @@
 
 #define CHATVIEWBACKGROUNDCOLOR [UIColor colorWithRed:0.936 green:0.932 blue:0.907 alpha:1]
 
+
+
+#define GGMainScreenFrame [UIScreen mainScreen ].applicationFrame
+
+
 #endif /* GGInterface_h */
