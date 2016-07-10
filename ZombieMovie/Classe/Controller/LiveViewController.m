@@ -13,6 +13,9 @@
 #import <Accelerate/Accelerate.h>
 #import "SQNetWorkManger.h"
 
+#import "GGChatRoomView.h"
+
+
 
 @interface LiveViewController ()<NSURLConnectionDelegate>
 @property (atomic, strong) NSURL *url;
@@ -21,13 +24,17 @@
 
 @property (weak, nonatomic) UIView *PlayerView;
 
-@property (nonatomic, assign)int number;
+@property (nonatomic, assign) int number;
 
-@property (nonatomic, strong)UIImageView *dimIamge;
+@property (nonatomic, strong) UIImageView *dimIamge;
+
+@property (nonatomic, strong) GGChatRoomView *chatRoomView;
 @end
 
 @implementation LiveViewController
 
+CGFloat const crviewheight = 250;
+CGFloat const crviewrightGap = 100;
 
 
 
@@ -54,6 +61,13 @@
     [self installMovieNotificationObservers];
     [self loadingView];
     [self changeBackBtn];
+    
+    
+    _chatRoomView = [[GGChatRoomView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame) - crviewheight, CGRectGetWidth(self.view.frame) - crviewrightGap, crviewheight)];
+    
+    
+    [self.view addSubview:_chatRoomView];
+    
     // Do any additional setup after loading the view.
 }
 

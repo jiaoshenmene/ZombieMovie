@@ -161,6 +161,9 @@
 		A11E126E1D30D76400E7EA58 /* ConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E126A1D30D76400E7EA58 /* ConversationListController.m */; };
 		A11E126F1D30D76400E7EA58 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E126D1D30D76400E7EA58 /* ChatViewController.m */; };
 		A11E12731D30D8C900E7EA58 /* EMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E12721D30D8C900E7EA58 /* EMAlertView.m */; };
+		A11E12781D31086D00E7EA58 /* GGChatRoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E12771D31086D00E7EA58 /* GGChatRoomView.m */; };
+		A11E127B1D320A8F00E7EA58 /* GGChatRoomBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E127A1D320A8F00E7EA58 /* GGChatRoomBottomView.m */; };
+		A11E127E1D321EA800E7EA58 /* GGChatRoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A11E127D1D321EA800E7EA58 /* GGChatRoomCell.m */; };
 		A122AB7A1D1D305A00589583 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A122AB791D1D305A00589583 /* LoginVC.m */; };
 		A122AB7E1D1D4B7A00589583 /* SQNetWorkManger.m in Sources */ = {isa = PBXBuildFile; fileRef = A122AB7D1D1D4B7A00589583 /* SQNetWorkManger.m */; };
 		A1591DE61D168A3600A9BB9C /* LookLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1591DE51D168A3600A9BB9C /* LookLiveVC.m */; };
@@ -570,6 +573,12 @@
 		A11E126D1D30D76400E7EA58 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		A11E12711D30D8C900E7EA58 /* EMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAlertView.h; sourceTree = "<group>"; };
 		A11E12721D30D8C900E7EA58 /* EMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAlertView.m; sourceTree = "<group>"; };
+		A11E12761D31086D00E7EA58 /* GGChatRoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGChatRoomView.h; sourceTree = "<group>"; };
+		A11E12771D31086D00E7EA58 /* GGChatRoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGChatRoomView.m; sourceTree = "<group>"; };
+		A11E12791D320A8F00E7EA58 /* GGChatRoomBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGChatRoomBottomView.h; sourceTree = "<group>"; };
+		A11E127A1D320A8F00E7EA58 /* GGChatRoomBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGChatRoomBottomView.m; sourceTree = "<group>"; };
+		A11E127C1D321EA800E7EA58 /* GGChatRoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGChatRoomCell.h; sourceTree = "<group>"; };
+		A11E127D1D321EA800E7EA58 /* GGChatRoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGChatRoomCell.m; sourceTree = "<group>"; };
 		A122AB781D1D305A00589583 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		A122AB791D1D305A00589583 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		A122AB7C1D1D4B7A00589583 /* SQNetWorkManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQNetWorkManger.h; sourceTree = "<group>"; };
@@ -854,6 +863,7 @@
 		183819751D09424200EFB3D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A11E12751D31084E00E7EA58 /* ChatRoom */,
 				A122AB771D1D2E2500589583 /* LoginVC */,
 				A1591EDB1D1696C300A9BB9C /* PerFormingVC */,
 				A1591ED71D16964600A9BB9C /* MeVC */,
@@ -1498,6 +1508,19 @@
 				A11E12721D30D8C900E7EA58 /* EMAlertView.m */,
 			);
 			path = EMAlertView;
+			sourceTree = "<group>";
+		};
+		A11E12751D31084E00E7EA58 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				A11E12761D31086D00E7EA58 /* GGChatRoomView.h */,
+				A11E12771D31086D00E7EA58 /* GGChatRoomView.m */,
+				A11E12791D320A8F00E7EA58 /* GGChatRoomBottomView.h */,
+				A11E127A1D320A8F00E7EA58 /* GGChatRoomBottomView.m */,
+				A11E127C1D321EA800E7EA58 /* GGChatRoomCell.h */,
+				A11E127D1D321EA800E7EA58 /* GGChatRoomCell.m */,
+			);
+			path = ChatRoom;
 			sourceTree = "<group>";
 		};
 		A122AB771D1D2E2500589583 /* LoginVC */ = {
@@ -2317,6 +2340,7 @@
 			files = (
 				A11E0FE41D30C86200E7EA58 /* UIImage+EMMultiFormat.m in Sources */,
 				A16CD1FB1D2385B3009E0E73 /* GGChatLib.m in Sources */,
+				A11E127B1D320A8F00E7EA58 /* GGChatRoomBottomView.m in Sources */,
 				A11E0F421D30C80E00E7EA58 /* EMAudioRecorderUtil.m in Sources */,
 				A11E0F901D30C80F00E7EA58 /* UIViewController+DismissKeyboard.m in Sources */,
 				A122AB7A1D1D305A00589583 /* LoginVC.m in Sources */,
@@ -2374,6 +2398,7 @@
 				A16CD1FC1D2385B3009E0E73 /* GGRegisterFunc.m in Sources */,
 				A11E0F931D30C80F00E7EA58 /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				A16CCC571D1FA847009E0E73 /* UIViewController+GGUtility.m in Sources */,
+				A11E12781D31086D00E7EA58 /* GGChatRoomView.m in Sources */,
 				A11E122C1D30D5F800E7EA58 /* GroupSettingViewController.m in Sources */,
 				A1DAA5C71D18F8590091B90E /* SGMeData.m in Sources */,
 				A11E123A1D30D5F800E7EA58 /* ApplyViewController.m in Sources */,
@@ -2456,6 +2481,7 @@
 				A16CD2421D253C14009E0E73 /* GGUserSetting.m in Sources */,
 				A11E0FE01D30C86200E7EA58 /* MKAnnotationView+EMWebCache.m in Sources */,
 				A1DAA5CA1D1916D50091B90E /* SGMeFunctionData.m in Sources */,
+				A11E127E1D321EA800E7EA58 /* GGChatRoomCell.m in Sources */,
 				A11E12451D30D5F800E7EA58 /* EditNicknameViewController.m in Sources */,
 				A11E0FDC1D30C86200E7EA58 /* EMSDWebImageDownloader.m in Sources */,
 				A11E12391D30D5F800E7EA58 /* ApplyFriendCell.m in Sources */,
