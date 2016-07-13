@@ -23,7 +23,7 @@
                 NSString *txt = [NSString stringWithFormat:@"user1:%@",textBody.text];;
                 
                 
-                CGSize size = [txt gettxtSize:txt];
+                CGSize size = [txt gettxtSize:CGSizeMake(300, CGFLOAT_MAX) font:[UIFont systemFontOfSize:20]];
                 _cellHeight = size.height;
                 _showTxt = txt;
                 NSLog(@"收到的文字是 txt -- %@",txt);

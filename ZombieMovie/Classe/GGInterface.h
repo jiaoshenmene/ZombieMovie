@@ -23,4 +23,8 @@
 #define GGMainScreenFrame [UIScreen mainScreen ].applicationFrame
 
 
+
+#define GGImage(x) [UIImage imageNamed:x]
+
+
 #endif /* GGInterface_h */

@@ -14,6 +14,7 @@
 
 - (void)iconMethod:(id)sender;
 
+- (void) goMeInfoVCMethod:(id)sender;
 
 @end
 

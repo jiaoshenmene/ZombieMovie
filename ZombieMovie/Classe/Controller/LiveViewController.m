@@ -59,13 +59,14 @@
     [_player setScalingMode:IJKMPMovieScalingModeAspectFill];
     [self installMovieNotificationObservers];
     [self loadingView];
-    [self changeBackBtn];
+    
     
 
     _supernatiantView = [[GGCRSupernatantView alloc] initWithFrame:self.view.bounds];
     
     
     [self.view addSubview:_supernatiantView];
+    [self changeBackBtn];
     
     // Do any additional setup after loading the view.
 }
@@ -217,7 +218,8 @@
 {
     // 返回
     UIButton * backBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    backBtn.frame = CGRectMake(10, 64 / 2 - 8, 33, 33);
+//    backBtn.frame = CGRectMake(10, 64 / 2 - 8, 33, 33);
+    backBtn.frame = CGRectMake(CGRectGetWidth(self.view.frame) - 41, CGRectGetHeight(self.view.frame) - 41, 33, 33);
     [backBtn setImage:[UIImage imageNamed:@"返回"] forState:(UIControlStateNormal)];
     [backBtn addTarget:self action:@selector(goBack) forControlEvents:(UIControlEventTouchUpInside)];
     backBtn.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -226,24 +228,24 @@
     backBtn.layer.shadowRadius = 1;
     [self.view addSubview:backBtn];
     
-    // 暂停
-    UIButton * playBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
-    playBtn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 33-10, 64 / 2 - 8, 33, 33);
-    
-    if (self.number == 0) {
-        [playBtn setImage:[UIImage imageNamed:@"暂停"] forState:(UIControlStateNormal)];
-        [playBtn setImage:[UIImage imageNamed:@"开始"] forState:(UIControlStateSelected)];
-    }else{
-        [playBtn setImage:[UIImage imageNamed:@"开始"] forState:(UIControlStateNormal)];
-        [playBtn setImage:[UIImage imageNamed:@"暂停"] forState:(UIControlStateSelected)];
-    }
-    
-    [playBtn addTarget:self action:@selector(play_btn:) forControlEvents:(UIControlEventTouchUpInside)];
-    playBtn.layer.shadowColor = [UIColor blackColor].CGColor;
-    playBtn.layer.shadowOffset = CGSizeMake(0, 0);
-    playBtn.layer.shadowOpacity = 0.5;
-    playBtn.layer.shadowRadius = 1;
-    [self.view addSubview:playBtn];
+//    // 暂停
+//    UIButton * playBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+//    playBtn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 33-10, 64 / 2 - 8, 33, 33);
+//    
+//    if (self.number == 0) {
+//        [playBtn setImage:[UIImage imageNamed:@"暂停"] forState:(UIControlStateNormal)];
+//        [playBtn setImage:[UIImage imageNamed:@"开始"] forState:(UIControlStateSelected)];
+//    }else{
+//        [playBtn setImage:[UIImage imageNamed:@"开始"] forState:(UIControlStateNormal)];
+//        [playBtn setImage:[UIImage imageNamed:@"暂停"] forState:(UIControlStateSelected)];
+//    }
+//    
+//    [playBtn addTarget:self action:@selector(play_btn:) forControlEvents:(UIControlEventTouchUpInside)];
+//    playBtn.layer.shadowColor = [UIColor blackColor].CGColor;
+//    playBtn.layer.shadowOffset = CGSizeMake(0, 0);
+//    playBtn.layer.shadowOpacity = 0.5;
+//    playBtn.layer.shadowRadius = 1;
+//    [self.view addSubview:playBtn];
     
     
 }

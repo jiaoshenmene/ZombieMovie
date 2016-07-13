@@ -42,6 +42,9 @@
 
 #import "SRRefreshView.h"
 
+#import "NSObject+GGUtility.h"
+
+
 
 const static NSString *sg_requestHead = @"http://121.42.201.209:8081";
 

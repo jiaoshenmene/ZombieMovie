@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface SGMeData : NSObject
 
 @property (nonatomic , assign) float cellHeight;
 
 @property (nonatomic , strong) NSString *identify;
+
+@property (nonatomic , strong) NSArray *attributeArray;
+
+
 
 @end

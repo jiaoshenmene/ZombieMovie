@@ -15,6 +15,7 @@
 
 - (void)gotoSettingVC;
 
+- (void) goMeInfoVCMethod:(id)sender;
 
 @end
 

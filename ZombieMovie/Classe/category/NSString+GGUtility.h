@@ -9,6 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (GGUtility)
-- (CGSize) gettxtSize:(NSString *)str;
+//- (CGSize) gettxtSize:(NSString *)str;
+- (CGSize) gettxtSize:(CGSize)size font:(UIFont *)font;
+
+- (CGSize)sizeWithFontCompatible:(UIFont *)font;
+
+
+- (CGSize)sizeWithFontCompatible:(UIFont *)font forWidth:(CGFloat)width lineBreakMode:(NSLineBreakMode)lineBreakMode;
+
+
+- (CGSize)sizeWithFontCompatible:(UIFont *)font constrainedToSize:(CGSize)size;
+
+
+- (CGSize)sizeWithFontCompatible:(UIFont *)font constrainedToSize:(CGSize)size lineBreakMode:(NSLineBreakMode)lineBreakMode;
 
 @end

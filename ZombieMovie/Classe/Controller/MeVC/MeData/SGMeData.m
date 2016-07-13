@@ -9,5 +9,8 @@
 #import "SGMeData.h"
 
 @implementation SGMeData
-
++ (NSDictionary *)modelContainerPropertyGenericClass
+{
+    return @{@"attributeArray":@"GGMeAttributeModel"};
+}
 @end

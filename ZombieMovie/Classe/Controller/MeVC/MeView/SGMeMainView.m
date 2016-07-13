@@ -116,6 +116,11 @@ static NSString *cellSetting = @"cellSetting";
     }
 }
 
-
+- (void) goMeInfoVCMethod:(id)sender
+{
+    if ([_delegate respondsToSelector:@selector(goMeInfoVCMethod:)]) {
+        [_delegate goMeInfoVCMethod:sender];
+    }
+}
 
 @end
