@@ -305,7 +305,7 @@
 //                userUrl = @"shenqi";
                 stream.url = [NSString stringWithFormat:@"rtmp://121.42.201.209/mytv/%@",userUrl];
                 NSLog(@"stream.url = %@",stream.url);
-                //stream.url = @"rtmp://daniulive.com:1935/live/stream2399";
+                stream.url = @"rtmp://60.174.36.89:1935/live/mmm";//@"rtmp://daniulive.com:1935/live/stream2399";
                 [_self.session startLive:stream];
             }else{
                 [_self.startLiveButton setTitle:@"开始直播" forState:UIControlStateNormal];
